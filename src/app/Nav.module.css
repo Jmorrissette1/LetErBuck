@@ -1,0 +1,34 @@
+.nav {
+    background-image: url(/Nav-Menu.svg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    padding: 1rem;
+    top: 0;
+    width: 1200px;
+    height: 100px;
+    z-index: 10;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  
+  .navList {
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  .navLink {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+  }
+  
+  .navLink:hover {
+    text-decoration: underline;
+  }

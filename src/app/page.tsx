@@ -1,11 +1,13 @@
 import Image from "next/image";
 import styles from "./page.module.css";
+import Nav from "./Nav";
 
 export default function Home() {
   return (
     
     <div>
       <main className={styles.main}>
+      <Nav />
         <div>
           <video autoPlay muted loop className={styles.videoBackground}>
             <source src="/LEB_Web_Background.mp4" type="video/mp4" />
