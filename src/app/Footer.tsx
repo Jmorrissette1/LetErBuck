@@ -1,14 +1,17 @@
 import Image from 'next/image';
-import React from 'react';
-import Link from 'next/link';
+
 import styles from './Footer.module.css';
 
 
 const Footer: React.FC = () => {
     return (
-      <div>
-        <h1>Test</h1>
+      <div className={styles.footerSection}>
+        <Image src={'/footer.svg'}  alt='mountain' width={1200} height={270}/>
+        <div className={styles.footerBody}>
+            Test
+        </div>
       </div>
+      
     );
   };
 

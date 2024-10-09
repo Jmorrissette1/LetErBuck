@@ -1,0 +1,11 @@
+.footerSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footerBody{
+    width: 100vw;
+    height: 400px;
+    background-color: #301c11;
+}
