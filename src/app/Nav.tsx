@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 import Link from 'next/link';
 import styles from './Nav.module.css';
@@ -17,9 +18,9 @@ const Nav: React.FC = () => {
               Fundrasing
             </Link>
           </li>
-          <li className={styles.navItem}>
+          <li className={styles.navLogo}>
             <Link href="/anotherPage">
-              Logo
+              <Image src="/LEB-Logo.svg" alt="Cowboy riding a car" width={208} height={230} className={styles.navLogo}></Image>
             </Link>
           </li>
           <li className={styles.navItem}>

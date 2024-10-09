@@ -1,6 +1,7 @@
-import Image from "next/image";
+
 import styles from "./page.module.css";
 import Nav from "./Nav";
+import Footer from "./Footer";
 
 export default function Home() {
   return (
@@ -13,14 +14,12 @@ export default function Home() {
             <source src="/LEB_Web_Background.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
-          <div className={styles.pageContent}>
-              <h1>Welcome to the Specific Page</h1>
-              <p>This page has a video background.</p>
-            </div>
+          
       </div>
+      <Footer />
       </main>
       <footer>
-        
+     
       </footer>
     </div>
   );
