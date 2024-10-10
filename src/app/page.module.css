@@ -17,24 +17,28 @@
 }
 
 .content{
-  width: 1000px;
+  width: 1200px;
   min-height: 400px;
   display: flex;
   justify-content: flex-end;
 }
 
-.testBox{
-  
-  width: 200px;
-  height: 400px;
-  background-color: red;
+.homeBanner{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 220px;
+  height: auto;
+  background-image: url('/home-flag.svg');
+  background-repeat: no-repeat;
   margin-top: -5rem;
+  padding: 20px;
 }
 
 .ryeFont {
   font-family: var(--rye);
-  font-weight: 400;
-  font-style: normal;
+  
+  
 }
 
 
