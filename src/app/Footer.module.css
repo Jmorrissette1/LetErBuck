@@ -5,6 +5,7 @@
     align-items: center;
 }
 .footerBody{
+    margin-top: -1rem;
     width: 100vw;
     height: 400px;
     background-color: #301c11;

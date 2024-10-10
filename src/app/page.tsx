@@ -16,6 +16,11 @@ export default function Home() {
           </video>
           
       </div>
+      <div className={styles.content}>
+        <div className={styles.testBox}>
+          Test Box
+        </div>
+      </div>
       <Footer />
       </main>
       <footer>
