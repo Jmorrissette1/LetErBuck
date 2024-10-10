@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-import {Rye} from 'next/font/google';
+import {Rye, Arvo} from 'next/font/google';
 import "./globals.css";
 
 const geistSans = localFont({
@@ -18,6 +18,12 @@ const rye = Rye({
   weight: '400',
   variable: "--rye",
 });
+const arvo = Arvo({
+  subsets: ['latin'],
+  weight: '400',
+  variable: "--arvo-font",
+});
+
 
 export const metadata: Metadata = {
   title: "Let Er Buck Car Wash || Wyoming",
@@ -31,7 +37,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} ${rye.variable}`}>
+      <body className={`${geistSans.variable} ${geistMono.variable} ${rye.variable} ${arvo.variable}`}>
         {children}
       </body>
     </html>

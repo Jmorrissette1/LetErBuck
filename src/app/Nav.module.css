@@ -27,7 +27,7 @@
   
   
   .navItem {
-    font-family: 'Arvo', serif;
+    font-family: var(--arvo-font);
     color: white;
     text-decoration: none;
     font-size: 1.2rem;
