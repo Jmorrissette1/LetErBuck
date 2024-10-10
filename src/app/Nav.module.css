@@ -26,10 +26,15 @@
   }
   
   
-  .navLink {
+  .navItem {
+    font-family: 'Arvo', serif;
     color: white;
     text-decoration: none;
     font-size: 1.2rem;
+  }
+
+  .navItem:hover {
+    color: #f8c24c;
   }
 
   .navLogo{

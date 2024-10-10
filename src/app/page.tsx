@@ -1,4 +1,5 @@
 
+import Head from "next/head";
 import styles from "./page.module.css";
 import Nav from "./Nav";
 import Footer from "./Footer";
@@ -7,6 +8,10 @@ export default function Home() {
   return (
     
     <div>
+     
+    <div>
+ 
+    </div>
       <main className={styles.main}>
       <Nav />
         <div>
@@ -18,13 +23,13 @@ export default function Home() {
       </div>
       <div className={styles.content}>
         <div className={styles.testBox}>
-          Test Box
+          <p className={styles.ryeFont}>Test Box</p>
         </div>
       </div>
-      <Footer />
+      
       </main>
-      <footer>
-     
+      <footer className={styles.footer}>
+        <Footer />
       </footer>
     </div>
   );
