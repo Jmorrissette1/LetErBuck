@@ -14,17 +14,17 @@ const Nav: React.FC = () => {
             </Link>
           </li>
           <li className={styles.navItem}>
-            <Link href="/anotherPage">
+            <Link href="/about">
               Fundrasing
             </Link>
           </li>
           <li className={styles.navLogo}>
-            <Link href="/anotherPage">
+            <Link href="/">
               <Image src="/LEB-Logo.svg" alt="Cowboy riding a car" width={208} height={230} className={styles.navLogo}></Image>
             </Link>
           </li>
           <li className={styles.navItem}>
-            <Link href="/anotherPage">
+            <Link href="/about">
               About Us
             </Link>
           </li>
