@@ -2,8 +2,9 @@
 import Head from "next/head";
 import Image from "next/image";
 import styles from "./page.module.css";
-import Nav from "./components/Nav";
-import Footer from "./components/Footer";
+import Nav from "./components/nav/Nav";
+import Footer from "./components/footer/Footer";
+
 
 export default function Home() {
   return (
@@ -28,11 +29,11 @@ export default function Home() {
           <p className={styles.ryeFont}>Monthly</p>
           <p className={styles.ryeFont}>Washes</p>
           <Image src="/banner-arrow.png" alt="blue sign me up button" width={200} height={30}></Image>
-          <p>Starting at Just</p>
+          <p className={styles.startingAt}>Starting at Just</p>
           <h2 className={styles.bannerPrice}>$20/Mo.</h2>
-          <p>Stay clean for Less!</p>
-          <Image src="/learn-more-btn.png" alt="blue sign me up button" width={170} height={30} className="banner-btn"></Image>
-          <Image src="/sign-me-up-btn.png" alt="blue sign me up button" width={170} height={30}></Image>
+          <p className={styles.startingAt}><em>Stay clean for Less!</em></p>
+          <Image src="/learn-more-btn.png" alt="blue sign me up button" width={170} height={30} className={styles.bannerBtn}></Image>
+          <Image src="/sign-me-up-btn.png" alt="blue sign me up button" width={170} height={30} className={styles.bannerBtn}></Image>
          
         </div>
       </div>

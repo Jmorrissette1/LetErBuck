@@ -5,14 +5,14 @@ import Footer from '../components/footer/Footer';
 import styles from '../page.module.css';
 
 
-const AboutPage: React.FC = () => {
+const Fundraising: React.FC = () => {
   return (
     <div className={styles.page}>
       <Nav />
       <main className={styles.main}>
         <div>
-          <h1>About Let'er Buck Car Wash</h1>
-          <p>Welcome To Let'er buck country!</p>
+          <h1>Fundraising</h1>
+          <p>Learn more about partnering with Let'Er Buck to raise money!</p>
         </div>
       </main>
       <Footer />
@@ -20,4 +20,4 @@ const AboutPage: React.FC = () => {
   );
 };
 
-export default AboutPage;
+export default Fundraising;

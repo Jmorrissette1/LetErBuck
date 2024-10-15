@@ -14,8 +14,8 @@ const Nav: React.FC = () => {
             </Link>
           </li>
           <li className={styles.navItem}>
-            <Link href="/about">
-              Fundrasing
+            <Link href="/fundraising">
+              Fundraising
             </Link>
           </li>
           <li className={styles.navLogo}>
