@@ -2,8 +2,8 @@
 import Head from "next/head";
 import Image from "next/image";
 import styles from "./page.module.css";
-import Nav from "./Nav";
-import Footer from "./Footer";
+import Nav from "./components/Nav";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (

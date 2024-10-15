@@ -1,7 +1,7 @@
 // pages/about.tsx
 import React from 'react';
-import Nav from '../Nav';
-import Footer from '../Footer';
+import Nav from '../components/Nav';
+import Footer from '../components/Footer';
 import styles from '../page.module.css';
 
 
