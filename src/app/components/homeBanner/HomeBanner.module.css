@@ -1,0 +1,75 @@
+.homeBanner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 220px;
+    height: auto;
+    background-image: url('/home-flag.svg');
+    background-repeat: no-repeat;
+    margin-top: -5rem;
+    padding: 20px;
+  }
+  
+  
+  .content{
+    width: 1200px;
+    min-height: 400px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .homeBanner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 220px;
+    height: auto;
+    background-image: url('/home-flag.svg');
+    background-repeat: no-repeat;
+    margin-top: -5rem;
+    padding: 20px;
+  }
+  
+  .ryeFont {
+    font-family: var(--rye);
+    font-size: 24px;
+  }
+  .startingAt{
+    font-family: var(--arvo-font);
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 13px; 
+  }
+  
+  .stayClean{
+    margin-bottom: 5px;
+    font-family: var(--arvo-font);
+    font-size: 13px;
+  }
+  
+  .bannerPrice{
+    font-family: var(--rye);
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 30px;
+    margin-bottom: 5px;
+    
+  }
+  
+  .bannerBtn{
+    margin-top: 10px;
+    animation: pulse 3s infinite;
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  

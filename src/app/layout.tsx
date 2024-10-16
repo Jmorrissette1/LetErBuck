@@ -20,7 +20,7 @@ const rye = Rye({
 });
 const arvo = Arvo({
   subsets: ['latin'],
-  weight: '400',
+  weight: ['400', '700'],
   variable: "--arvo-font",
 });
 

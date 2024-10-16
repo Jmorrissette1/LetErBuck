@@ -15,9 +15,9 @@ const AboutPage: React.FC = () => {
       <Nav />
       <main className={styles.main}>
        
-        <div>
-          <h1>About Let'er Buck Car Wash</h1>
-          <p>Welcome To Let'er buck country!</p>
+        <div className={styles.pageHeader}>
+          <h1 className={styles.pageH1}>About Let&apos;er Buck Car Wash</h1>
+          <h2 className={styles.pageH2}>Welcome To Let&apos;er buck country!</h2>
         </div>
         <ContentBox>
          <p className={styles.contentP}> <em>Let’Er Buck Car Wash was designed specifically with the folks of Wyoming in mind. 

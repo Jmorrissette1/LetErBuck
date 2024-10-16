@@ -1,6 +1,5 @@
 
 import React from 'react';
-import Image from 'next/image';
 import Nav from '../components/nav/Nav';
 import Footer from '../components/footer/Footer';
 import ContentBox from '../components/contentBox/ContentBox';
@@ -16,7 +15,6 @@ const Packages: React.FC = () => {
        
         <div>
           <h1>Wash Packages</h1>
-          <p>Welcome To Let'er buck country!</p>
         </div>
         <ContentBox>
         <p>Place Holder</p>

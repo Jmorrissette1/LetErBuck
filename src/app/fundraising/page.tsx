@@ -12,9 +12,9 @@ const Fundraising: React.FC = () => {
     <div className={styles.page}>
       <Nav />
       <main className={styles.main}>
-        <div>
-          <h1>Fundraising</h1>
-          <p>Learn more about partnering with Let'Er Buck to raise money!</p>
+        <div className={styles.pageHeader}>
+          <h1 className={styles.pageH1}>Fundraising</h1>
+          <h2 className={styles.pageH2}>Learn more about partnering with Let&apos;Er Buck to raise money!</h2>
         </div>
        
         <ContentBox>
