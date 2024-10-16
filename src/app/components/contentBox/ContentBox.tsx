@@ -8,9 +8,12 @@ interface ContentBoxProps {
 }
 
 const ContentBox: React.FC<ContentBoxProps> = ({children}) => {
-    return (<div className={`${styles.contentContainer} ${styles.column}`}>
-        <div className={styles.contentBox}> {children} </div>
-        
+    return (
+      <div className={styles.row}>
+          <div className={`${styles.contentContainer} ${styles.column}`}>
+          <div className={styles.contentBox}> {children} </div>
+          </div>
+          <div><Image src="/images/specials-banner.svg" alt="banner image" width={300} height={700}></Image></div> 
       </div>
     );
       

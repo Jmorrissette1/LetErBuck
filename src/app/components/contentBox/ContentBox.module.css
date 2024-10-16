@@ -1,4 +1,11 @@
 
+.row{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
 .contentContainer {
     position: relative;
     width: 100%;
