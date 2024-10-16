@@ -10,7 +10,12 @@
   z-index: -1;
 }
 
-
+.column{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
 .page {
   position: relative;
@@ -47,19 +52,19 @@
   font-family: var(--arvo-font);
   font-weight: bold;
   text-transform: uppercase;
-  font-size: 14px; 
+  font-size: 13px; 
 }
 
 .stayClean{
   margin-bottom: 5px;
   font-family: var(--arvo-font);
-  font-size: 14px;
+  font-size: 13px;
 }
 
 .bannerPrice{
   font-family: var(--rye);
   text-transform: uppercase;
-  font-size: 34px;
+  font-size: 30px;
   margin-bottom: 5px;
   
 }
@@ -92,6 +97,26 @@
   
 }
 
+.contentP{
+  font-family: var(--arvo-font);
+  padding: 10px 40px;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.contentH4{
+  font-family: var(--arvo-font);
+  padding: 10px 40px;
+}
+
+.fundrasingImg{
+  padding: 10px 40px;
+}
+
+
+.aboutBtn{
+  margin: 1rem 2.5rem;
+}
 .footer{
   position: relative;
   z-index: 1;

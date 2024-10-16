@@ -28,7 +28,7 @@ export default function Home() {
           <p className={styles.ryeFont}>Unlimited</p>
           <p className={styles.ryeFont}>Monthly</p>
           <p className={styles.ryeFont}>Washes</p>
-          <Image src="/banner-arrow.png" alt="blue sign me up button" width={200} height={30}></Image>
+          <Image src="/banner-arrow.png" alt="blue sign me up button" width={200} height={25}></Image>
           <p className={styles.startingAt}>Starting at Just</p>
           <h2 className={styles.bannerPrice}>$20/Mo.</h2>
           <p className={styles.startingAt}><em>Stay clean for Less!</em></p>
