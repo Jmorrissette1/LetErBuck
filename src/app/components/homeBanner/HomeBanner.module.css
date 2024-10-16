@@ -6,6 +6,7 @@
     height: auto;
     background-image: url('/home-flag.svg');
     background-repeat: no-repeat;
+    background-size: center;
     margin-top: -5rem;
     padding: 20px;
   }
@@ -16,18 +17,7 @@
     min-height: 400px;
     display: flex;
     justify-content: flex-end;
-  }
-  
-  .homeBanner{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 220px;
-    height: auto;
-    background-image: url('/home-flag.svg');
-    background-repeat: no-repeat;
-    margin-top: -5rem;
-    padding: 20px;
+    
   }
   
   .ryeFont {
