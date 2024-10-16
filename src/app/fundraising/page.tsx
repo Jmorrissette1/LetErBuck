@@ -16,7 +16,7 @@ const Fundraising: React.FC = () => {
           <h1>Fundraising</h1>
           <p>Learn more about partnering with Let'Er Buck to raise money!</p>
         </div>
-        <div className={styles.row}>
+       
         <ContentBox>
             <p className={styles.contentP}>Thank you for considering Let’er Buck Car Wash to help you raise funds for your organization. 
               We love helping our community as much as we can. Here are the options we offer to assist:</p>
@@ -28,8 +28,7 @@ const Fundraising: React.FC = () => {
               off a number of cards for you featuring your organization’s logo.</p>
             <Image src="/images/leb_fundraisers_2.png" alt="fund raising photo" width={650} height={285} className={styles.fundrasingImg}></Image>
           </ContentBox>
-           <aside><Image src="/images/specials-banner.svg" alt="banner image" width={300} height={700}></Image></aside> 
-          </div>
+         
       </main>
       <Footer />
     </div>

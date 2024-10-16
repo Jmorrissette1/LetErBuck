@@ -13,7 +13,7 @@ const ContentBox: React.FC<ContentBoxProps> = ({children}) => {
           <div className={`${styles.contentContainer} ${styles.column}`}>
           <div className={styles.contentBox}> {children} </div>
           </div>
-          <div><Image src="/images/specials-banner.svg" alt="banner image" width={300} height={700}></Image></div> 
+          <div><Image src="/images/specials-banner.svg" alt="banner image" width={300} height={700} className={styles.specialsBanner}></Image></div> 
       </div>
     );
       

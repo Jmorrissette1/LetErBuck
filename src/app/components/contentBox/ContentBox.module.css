@@ -3,7 +3,6 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
 }
 
 .contentContainer {
@@ -40,3 +39,7 @@
     background: url('/content-bottom.svg') no-repeat center center;
   }
   
+
+  .specialsBanner{
+    margin-top: 10rem;
+  }
