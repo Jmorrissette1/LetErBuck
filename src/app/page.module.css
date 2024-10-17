@@ -96,3 +96,13 @@
   position: relative;
   z-index: 1;
 }
+
+.BannerBoxTest {
+  display: flex;
+  flex-direction: row;
+}
+
+.contentContainer {
+  display: flex;
+  flex-direction: row;
+}

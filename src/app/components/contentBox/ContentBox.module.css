@@ -1,48 +1,66 @@
-
-.row{
+.row {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
 
 .contentContainer {
-    position: relative;
-    width: 100%;
-    padding-top: 90px; /* Adjust based on the height of the top image */
-    padding-bottom: 90px; /* Adjust based on the height of the bottom image */
-    
-  
-  }
-  
-  .contentBox{
-    max-width: 745px;
-    border-left: 42px solid #301c11;
-    border-right: 44px solid #301c11;
-  }
-  
-  .contentContainer:before,
-  .contentContainer:after{
-    content: "";
-    display: block;
-    width: 100%;
-    height: 90px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-  
-  }
-  
-  .contentContainer:before{
-    background: url('/content-top.svg') no-repeat center center;
-  }
-  .contentContainer:after{
-    background: url('/content-bottom.svg') no-repeat center center;
-  }
-  
-
-  .specialsBanner{
-    margin-top: 10rem;
-    margin-left: -21px;
-    position: relative;
+  position: relative;
+  width: 100%;
+  padding-top: 90px; /* Adjust based on the height of the top image */
+  padding-bottom: 90px; /* Adjust based on the height of the bottom image */
 }
-  
+
+.contentBox {
+  max-width: 745px;
+  border-left: 42px solid #301c11;
+  border-right: 44px solid #301c11;
+}
+
+.contentContainer:before,
+.contentContainer:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 90px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.contentContainer:before {
+  background: url("/content-top.svg") no-repeat center center;
+}
+.contentContainer:after {
+  background: url("/content-bottom.svg") no-repeat center center;
+}
+
+.test {
+  display: flex;
+  flex-direction: row;
+}
+
+.specialsBanner {
+  margin-top: 11rem;
+  margin-left: -21px;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.imageContainer {
+  position: relative;
+  display: inline-block;
+}
+.overlayContent {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white; /* Adjust as needed */
+  text-align: center;
+}
+
+.bestValueBtn {
+  position: absolute;
+  right: -90px;
+  top: -150px;
+}

@@ -1,0 +1,27 @@
+.specialsBanner {
+  width: 300px;
+  height: 700px;
+  margin-top: 11rem;
+  margin-left: -21px;
+  background-image: url("/images/specials-banner.svg");
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.bestValueBtn {
+  margin-left: 15rem;
+  margin-top: -2rem;
+  animation: 2s linear infinite forwards sway;
+}
+
+@keyframes sway {
+  0% {
+    transform: rotate(-5deg);
+  }
+  50% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(-5deg);
+  }
+}
