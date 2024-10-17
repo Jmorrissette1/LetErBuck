@@ -18,29 +18,27 @@
   justify-content: flex-end;
 }
 
-.ryeFont {
-  font-family: var(--rye);
-  font-size: 24px;
-}
 .startingAt {
+  margin-top: 5px;
   font-family: var(--arvo-font);
   font-weight: bold;
   text-transform: uppercase;
-  font-size: 13px;
+  font-size: 1rem;
 }
 
 .stayClean {
   margin-bottom: 5px;
   font-family: var(--arvo-font);
-  font-size: 13px;
+  font-size: 1rem;
 }
 
 .bannerPrice {
   font-family: var(--rye);
   font-weight: 300;
   text-transform: uppercase;
-  font-size: 30px;
-  margin-bottom: 5px;
+  margin-top: 10px;
+  font-size: 2.3rem;
+  margin-bottom: 10px;
 }
 
 .bannerBtn {
@@ -63,16 +61,17 @@
 .topLine {
   font-family: var(--rye);
   text-transform: uppercase;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
 }
 
 .middleLine {
   font-family: var(--rye);
   text-transform: uppercase;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
 }
 .bottomLine {
   font-family: var(--rye);
   text-transform: uppercase;
-  font-size: 1.8rem;
+  font-size: 2rem;
+  margin-bottom: 5px;
 }

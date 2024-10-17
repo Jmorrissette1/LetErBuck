@@ -12,8 +12,8 @@ const HomeBanner: React.FC = () => {
         <p className={styles.bottomLine}>Washes</p>
         <Image
           src="/banner-arrow.png"
-          alt="blue sign me up button"
-          width={200}
+          alt="white arrow"
+          width={215}
           height={25}
         ></Image>
         <p className={styles.startingAt}>Starting at Just</p>
@@ -28,7 +28,10 @@ const HomeBanner: React.FC = () => {
           height={30}
           className={styles.bannerBtn}
         ></Image>
-        <Link href="https://www.carwashlogin.com/leterbuckcarwash/customerportal/signupforunlimited.aspx">
+        <Link
+          href="https://www.carwashlogin.com/leterbuckcarwash/customerportal/signupforunlimited.aspx"
+          target="_blank"
+        >
           <Image
             src="/sign-me-up-btn.png"
             alt="blue sign me up button"
