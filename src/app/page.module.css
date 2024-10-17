@@ -1,5 +1,4 @@
-
- /* video background */
+/* video background */
 .videoBackground {
   position: fixed;
   top: 0;
@@ -10,14 +9,14 @@
   z-index: -1;
 }
 
-.column{
+.column {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.row{
+.row {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -32,29 +31,29 @@
   align-items: center;
 }
 
-.pageHeader{
+.pageHeader {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   width: 980px;
 }
 
-.pageH1{
-  font-family:var(--rye);
+.pageH1 {
+  font-family: var(--rye);
   text-transform: uppercase;
   font-weight: 300;
   color: #2b1507;
   font-size: 32px;
 }
 
-.pageH2{
+.pageH2 {
   font-family: var(--arvo-font);
   text-transform: uppercase;
   font-weight: 700;
   color: #2b1507;
   font-size: 24px;
 }
-.content{
+.content {
   width: 1200px;
   min-height: 400px;
   display: flex;
@@ -68,31 +67,32 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  
 }
 
-.contentP{
+.contentP {
   font-family: var(--arvo-font);
   padding: 10px 40px;
   font-size: 16px;
   line-height: 22px;
 }
 
-.contentH4{
+.contentH4 {
   font-family: var(--arvo-font);
   padding: 10px 40px;
 }
 
-.fundrasingImg{
+.fundrasingImg {
   padding: 10px 40px;
 }
 
-
-.aboutBtn{
+.aboutBtn {
   margin: 1rem 2.5rem;
 }
-.footer{
+
+.locationBox {
+  width: 670px;
+}
+.footer {
   position: relative;
   z-index: 1;
 }
-

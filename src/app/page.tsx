@@ -3,17 +3,11 @@ import Nav from "./components/nav/Nav";
 import HomeBanner from "./components/homeBanner/HomeBanner";
 import Footer from "./components/footer/Footer";
 
-
 export default function Home() {
   return (
-    
     <div>
-     
-    <div>
- 
-    </div>
       <main className={styles.main}>
-      <Nav />
+        <Nav />
         <div>
           <video autoPlay muted loop className={styles.videoBackground}>
             <source src="/videos/LEB_Web_Background.mp4" type="video/mp4" />
