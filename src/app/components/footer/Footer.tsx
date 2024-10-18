@@ -14,7 +14,14 @@ const Footer: React.FC = () => {
       <div className={styles.footerBody}>
         <div className={styles.footerYellowBar}>
           <ul className={styles.footerNav}>
-            <li>Unlimited Signup</li>
+            <li>
+              <Image
+                src={"/images/footer-signup.svg"}
+                alt="footer sign up"
+                width={170}
+                height={25}
+              />
+            </li>
             <li>Package</li>
             <li>Fundraising</li>
             <li>About Us</li>
