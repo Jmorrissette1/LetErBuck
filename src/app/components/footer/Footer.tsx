@@ -30,7 +30,9 @@ const Footer: React.FC = () => {
             <li>Gift Cards</li>
           </ul>
         </div>
-        <p>Copyright © 2024 Let&apos;Er Buck Car Wash. All Rights Reserved.</p>
+        <p className={styles.footerP}>
+          Copyright © 2024 Let&apos;Er Buck Car Wash. All Rights Reserved.
+        </p>
       </div>
     </div>
   );
