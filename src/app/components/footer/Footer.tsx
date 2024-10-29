@@ -19,6 +19,7 @@ const Footer: React.FC = () => {
                 alt="Join The Club"
                 width={75}
                 height={75}
+                className={styles.joinNow}
               />
             </li>
             <li className={styles.listItem}>Package</li>

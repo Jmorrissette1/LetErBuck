@@ -88,3 +88,19 @@
 .vacutechImage {
   margin: 1rem 0.5rem;
 }
+
+.joinNow {
+  animation: 2s linear infinite forwards sway;
+}
+
+@keyframes sway {
+  0% {
+    transform: rotate(5deg);
+  }
+  50% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(5deg);
+  }
+}
