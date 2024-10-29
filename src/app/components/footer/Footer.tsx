@@ -37,15 +37,62 @@ const Footer: React.FC = () => {
             </li>
           </ul>
         </div>
-        <div className={styles.row}>
-          <div>
+        <div className={styles.addressBox}>
+          <div className={styles.addressLine}>
             <div className={styles.row}>
-              <p className={styles.footerP}>(360)675-1935 &bull;</p>
+              <p className={styles.footerP}>
+                <strong>(307)675-1935</strong> &bull;
+              </p>
               <p className={styles.footerP}>624 East Brundage Lane &bull;</p>
               <p className={styles.footerP}>Sheridan, Wyoming 82801</p>
             </div>
+            <div>
+              <p className={styles.footerP}>Click Here for Hours</p>
+            </div>
+            <div className={styles.row}>
+              <p className={styles.footerP}>
+                <strong>(307) 337-2202</strong> &bull;
+              </p>
+              <p className={styles.footerP}>4320 East 2nd Street &bull;</p>
+              <p className={styles.footerP}>Casper, Wyoming 82609</p>
+            </div>
+            <div>
+              <p className={styles.footerP}>Click Here for Hours</p>
+            </div>
+            <div className={styles.row}>
+              <p className={styles.footerP}>
+                <strong>(307) 472-9274</strong> &bull;
+              </p>
+              <p className={styles.footerP}>3712 CY Ave &bull;</p>
+              <p className={styles.footerP}>Casper, WY 82604</p>
+            </div>
+            <div>
+              <p className={styles.footerP}>Click Here for Hours</p>
+            </div>
+            <div>
+              <Image
+                src="images/facebook.svg"
+                alt="facebook Icon"
+                width={50}
+                height={50}
+              />
+            </div>
           </div>
-          <div>Test</div>
+          <div>
+            <div>
+              <p className={styles.footerP}>
+                <em>PROUDLY OFFERING THE WORLD’S MOST POWERFUL VACUUMS BY</em>
+              </p>
+              <div className={styles.vacutechImage}>
+                <Image
+                  src="/images/vacutech.png"
+                  alt="Vault Tech Vacums"
+                  width={115}
+                  height={25}
+                />
+              </div>
+            </div>
+          </div>
         </div>
         <p className={styles.footerP}>
           Copyright © 2024 Let&apos;Er Buck Car Wash. All Rights Reserved.
