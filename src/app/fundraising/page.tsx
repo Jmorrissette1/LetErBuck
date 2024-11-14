@@ -1,8 +1,10 @@
 import React from "react";
 import Image from "next/image";
+
 import Nav from "../components/nav/Nav";
 import SpecialsBanner from "../components/specialsBanner/SpecialsBanner";
 import ContentBox from "../components/contentBox/ContentBox";
+import ContactForm from "../components/contactForm/ContactForm";
 import Footer from "../components/footer/Footer";
 import styles from "../page.module.css";
 
@@ -50,6 +52,7 @@ const Fundraising: React.FC = () => {
               height={285}
               className={styles.fundrasingImg}
             ></Image>
+            <ContactForm></ContactForm>
           </ContentBox>
           <SpecialsBanner />
         </div>
