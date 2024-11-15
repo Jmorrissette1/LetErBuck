@@ -52,7 +52,11 @@ const Fundraising: React.FC = () => {
               height={285}
               className={styles.fundrasingImg}
             ></Image>
-            <ContactForm></ContactForm>
+
+            <div className={styles.contactForm}>
+              <h2>Please Fill Out the Form Below</h2>
+              <ContactForm></ContactForm>
+            </div>
           </ContentBox>
           <SpecialsBanner />
         </div>
