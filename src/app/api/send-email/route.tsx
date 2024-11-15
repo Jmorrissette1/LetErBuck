@@ -7,11 +7,19 @@ export async function POST(req: NextRequest) {
 
     // Create a transporter object using SMTP transport
     const transporter = nodemailer.createTransport({
-      service: "gmail", // Use your email service
+      host: "smtp.office365.com",
+      port: 587,
+      tls: {
+        ciphers: "SSLv3",
+        rejectUnauthorized: false,
+      },
       auth: {
         user: process.env.EMAIL_USER,
         pass: process.env.EMAIL_PASS,
       },
+      secure: false,
+      debug: true,
+      logger: true,
     });
 
     // Define email options

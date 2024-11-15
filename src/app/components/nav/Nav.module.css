@@ -1,58 +1,88 @@
 .nav {
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-    background-image: url(/Nav-Menu.svg);
-    background-repeat: no-repeat;
-    background-size:cover;
-    padding: 1rem;
-    top: 0;
-    width: 1205px;
-    height: 120px;
-    z-index: 10;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-    padding: 20px;
-  }
-  
-  .navList {
-    color: #fff;
-    display: flex;
-    justify-content: space-around;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  
-  .navItem {
-    font-family: var(--arvo-font);
-    color: white;
-    text-decoration: none;
-    font-size: 1.2rem;
-  }
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  background-image: url(/Nav-Menu.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 1rem;
+  top: 0;
+  width: 1205px;
+  height: 120px;
+  z-index: 10;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 20px;
+}
 
-  .navItem:hover {
-    color: #f8c24c;
-  }
+.navList {
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
 
-  .navLogo{
-    position: relative;
-    z-index: 20;
-    overflow: visible;
-  }
+.navItem {
+  font-family: var(--arvo-font);
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  position: relative;
+}
 
-  
-  
-  .navLink:hover {
-    text-decoration: underline;
-  }
+.navItem a {
+  color: white;
+  text-decoration: none;
+}
 
-  .navItem{
-    font-size: 16px;
-    color: #fff;
-    text-transform: uppercase;
-    margin: 6rem 4rem;
-    padding: 5px;
-  }
+.navItem:hover {
+  color: #f8c24c;
+}
+
+.navLogo {
+  position: relative;
+  z-index: 20;
+  overflow: visible;
+}
+
+.navLink:hover {
+  text-decoration: underline;
+}
+
+.navItem {
+  font-size: 16px;
+  color: #fff;
+  text-transform: uppercase;
+  margin: 6rem 4rem;
+  padding: 5px;
+}
+
+.dropdownMenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #444;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  z-index: 1000;
+}
+
+.dropdown:hover .dropdownMenu {
+  display: block;
+}
+
+.dropdownItem a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 0.5rem 1rem;
+}
+
+.dropdownItem a:hover {
+  background-color: #555;
+}

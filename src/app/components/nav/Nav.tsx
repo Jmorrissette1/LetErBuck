@@ -7,8 +7,16 @@ const Nav: React.FC = () => {
   return (
     <nav className={styles.nav}>
       <ul className={styles.navList}>
-        <li className={styles.navItem}>
-          <Link href="/">Packages</Link>
+        <li className={`${styles.navItem} ${styles.dropdown}`}>
+          <Link href="/packages">Packages</Link>
+          <ul className={styles.dropdownMenu}>
+            <li className={styles.dropdownItem}>
+              <Link href="/packages">Packages</Link>
+            </li>
+            <li className={styles.dropdownItem}>
+              <Link href="/whyUnlimited">Why Unlimited?</Link>
+            </li>
+          </ul>
         </li>
         <li className={styles.navItem}>
           <Link href="/fundraising">Fundraising</Link>
