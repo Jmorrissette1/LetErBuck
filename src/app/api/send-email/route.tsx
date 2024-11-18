@@ -1,23 +1,23 @@
 import { NextRequest, NextResponse } from "next/server";
+import dotenv from "dotenv";
 import nodemailer from "nodemailer";
 
+dotenv.config();
 export async function POST(req: NextRequest) {
   try {
     const { organizationName, name, email, message } = await req.json();
 
-    // Create a transporter object using SMTP transport
     const transporter = nodemailer.createTransport({
       host: "smtp.office365.com",
+      requireTLS: true,
+      secure: false,
       port: 587,
-      tls: {
-        ciphers: "SSLv3",
-        rejectUnauthorized: false,
-      },
+      tls: { ciphers: "SSLv3" },
       auth: {
         user: process.env.EMAIL_USER,
         pass: process.env.EMAIL_PASS,
       },
-      secure: false,
+
       debug: true,
       logger: true,
     });

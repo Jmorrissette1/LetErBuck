@@ -21,7 +21,7 @@ const ContactForm = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch("/api/send-email", {
+      const response = await fetch("/api/send-grid-email", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -66,6 +66,7 @@ const ContactForm = () => {
           required
         />
       </div>
+
       <div>
         <label htmlFor="email">Email:</label>
         <input
