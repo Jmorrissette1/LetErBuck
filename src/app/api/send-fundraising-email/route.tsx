@@ -5,7 +5,20 @@ import nodemailer from "nodemailer";
 dotenv.config();
 export async function POST(req: NextRequest) {
   try {
-    const { organizationName, name, email, message } = await req.json();
+    const {
+      organizationName,
+      name,
+      email,
+      phone,
+      fundraiserType,
+      location,
+      timeline,
+      participants,
+      checkMessage,
+      fundsMessage,
+      addressMessage,
+      comments,
+    } = await req.json();
 
     const transporter = nodemailer.createTransport({
       host: "smtp.office365.com",
@@ -17,23 +30,27 @@ export async function POST(req: NextRequest) {
         user: process.env.EMAIL_USER,
         pass: process.env.EMAIL_PASS,
       },
-
-      debug: true,
-      logger: true,
     });
 
-    // Define email options
     const mailOptions = {
-      from: `LeterbuckTest <${process.env.EMAIL_USER}>`,
+      from: `Let er Buck Car Wash <${process.env.EMAIL_USER}>`,
       to: "J.morrissette47@gmail.com", // Replace with the recipient's email address
-      subject: "Contact Form Submission",
+      subject: "Fundraising Request",
       html: `
       <h1>Contact Form Submission</h1>
-      <p><strong>Name: ${name}</p>
       <p><strong>Organization Name: ${organizationName}</p>
+      <p><strong>Name: ${name}</p>
       <p><strong>Email:</strong> ${email}</p>
-      <p><strong>Message:</strong></p>
-      <p>${message}</p>
+      <p><strong>Email:</strong> ${phone}}</p>
+      <h3><strong>Event Details</strong></h3>
+      <p><strong>Fundraiser Type:</strong> ${fundraiserType}</p>
+      <p><strong>Let'er Buck Location:</strong> ${location}</p>
+      <p><strong>Desired Timeline:${timeline}</p>
+      <p><strong>Desired Timeline:${participants}</p>
+      <p><strong>Address To send Check: </strong>${checkMessage}</p>
+      <p><strong>Address To send Check: </strong>${addressMessage}</p>
+      <p><strong>How will the funds be used?</strong>${fundsMessage}</p>
+      <p><strong>Additional comments:</strong>${comments}</p>
      
     `, // HTML version
     };

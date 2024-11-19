@@ -72,7 +72,7 @@
   z-index: 1000;
   background-image: url(/menu-flag.svg);
   background-position: center;
-  background-size: cover;
+  background-size: contain;
 }
 
 .dropdown:hover .dropdownMenu {

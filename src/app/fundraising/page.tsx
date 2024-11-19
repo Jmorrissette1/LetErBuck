@@ -4,7 +4,7 @@ import Image from "next/image";
 import Nav from "../components/nav/Nav";
 import SpecialsBanner from "../components/specialsBanner/SpecialsBanner";
 import ContentBox from "../components/contentBox/ContentBox";
-import ContactForm from "../components/contactForm/ContactForm";
+import FundraisingForm from "../components/contactForm/FundraisingForm";
 import Footer from "../components/footer/Footer";
 import styles from "../page.module.css";
 
@@ -54,8 +54,7 @@ const Fundraising: React.FC = () => {
             ></Image>
 
             <div className={styles.contactForm}>
-              <h2>Please Fill Out the Form Below</h2>
-              <ContactForm></ContactForm>
+              <FundraisingForm></FundraisingForm>
             </div>
           </ContentBox>
           <SpecialsBanner />
