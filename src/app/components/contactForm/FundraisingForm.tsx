@@ -58,7 +58,9 @@ const FundraisingForm = () => {
 
   return (
     <form onSubmit={handleSubmit} className={styles.form}>
-      <h2>Please Fill Out the Form Below</h2>
+      <h2 className="text-3xl font-bold underline">
+        Please Fill Out the Form Below
+      </h2>
       <h3 className={styles.formHeader}>Contact Details</h3>
       <div className={styles.formFeild}>
         <label htmlFor="organizationName">Name of Charity/Organization:</label>

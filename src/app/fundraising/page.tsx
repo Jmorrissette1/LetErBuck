@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-
 import Nav from "../components/nav/Nav";
 import SpecialsBanner from "../components/specialsBanner/SpecialsBanner";
 import ContentBox from "../components/contentBox/ContentBox";

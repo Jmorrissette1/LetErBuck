@@ -1,4 +1,8 @@
-.nav {
+.weatherStrip {
+  display: block;
+  align-content: center;
+}
+.navBar {
   margin-top: 5rem;
   margin-bottom: 5rem;
   background-image: url(/Nav-Menu.svg);
@@ -64,6 +68,7 @@
   display: none;
   position: absolute;
   width: 150px;
+  height: 170px;
   top: 100%;
   left: 0;
   list-style: none;
@@ -72,7 +77,8 @@
   z-index: 1000;
   background-image: url(/menu-flag.svg);
   background-position: center;
-  background-size: contain;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .dropdown:hover .dropdownMenu {
