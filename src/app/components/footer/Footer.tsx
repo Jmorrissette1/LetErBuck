@@ -1,5 +1,6 @@
 import Image from "next/image";
 import styles from "./Footer.module.css";
+import Link from "next/link";
 
 const Footer: React.FC = () => {
   return (
@@ -29,12 +30,14 @@ const Footer: React.FC = () => {
             <li className={styles.listItem}>Manage Your Subscription</li>
             <li>
               {" "}
-              <Image
-                src={"/images/gift-cards.png"}
-                alt="gift card image"
-                width={168}
-                height={22}
-              />
+              <Link href="https://www.carwashlogin.com/leterbuckcarwash/customerportal/virtualwashbooks.aspx">
+                <Image
+                  src={"/images/gift-cards.png"}
+                  alt="gift card image"
+                  width={168}
+                  height={22}
+                />
+              </Link>
             </li>
           </ul>
         </div>

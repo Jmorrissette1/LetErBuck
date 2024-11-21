@@ -15,6 +15,7 @@
   max-width: 745px;
   border-left: 42px solid #301c11;
   border-right: 44px solid #301c11;
+  background: #fff;
 }
 
 .contentContainer:before,
