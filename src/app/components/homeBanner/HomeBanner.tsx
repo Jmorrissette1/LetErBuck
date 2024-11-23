@@ -21,13 +21,15 @@ const HomeBanner: React.FC = () => {
         <p className={styles.stayClean}>
           <em>Stay clean for Less!</em>
         </p>
-        <Image
-          src="/learn-more-btn.png"
-          alt="blue sign me up button"
-          width={170}
-          height={30}
-          className={styles.bannerBtn}
-        ></Image>
+        <Link href="/whyUnlimited">
+          <Image
+            src="/learn-more-btn.png"
+            alt="blue sign me up button"
+            width={170}
+            height={30}
+            className={styles.bannerBtn}
+          ></Image>
+        </Link>
         <Link
           href="https://www.carwashlogin.com/leterbuckcarwash/customerportal/signupforunlimited.aspx"
           target="_blank"

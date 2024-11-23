@@ -16,6 +16,9 @@ const AboutPage: React.FC = () => {
           <ContentBox>
             <div className={styles.locationBox}>
               <p className={styles.contentP}>Phone: 307-675-1935</p>
+              <p className={styles.contentP}>
+                Email: info@leterbuckcarwash.com
+              </p>
             </div>
           </ContentBox>
           <SpecialsBanner />

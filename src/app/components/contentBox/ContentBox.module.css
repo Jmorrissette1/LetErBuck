@@ -7,7 +7,7 @@
 .contentContainer {
   position: relative;
   width: 100%;
-  padding-top: 90px; /* Adjust based on the height of the top image */
+  padding-top: 40px; /* Adjust based on the height of the top image */
   padding-bottom: 90px; /* Adjust based on the height of the bottom image */
 }
 

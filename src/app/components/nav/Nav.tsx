@@ -7,6 +7,9 @@ const Nav: React.FC = () => {
   return (
     <nav className={styles.nav}>
       <div className={styles.weatherStrip}>Test</div>
+      <div className={styles.weatherStrip}>
+        <Link href="/managesub">Manage Your Subscrption</Link>
+      </div>
       <div className={styles.navBar}>
         <ul className={styles.navList}>
           <li className={`${styles.navItem} ${styles.dropdown}`}>
@@ -53,13 +56,13 @@ const Nav: React.FC = () => {
             <Link href="/locations/sheridan">Locations</Link>
             <ul className={styles.dropdownMenu}>
               <li className={styles.dropdownItem}>
-                <Link href="/packages">Packages</Link>
+                <Link href="/locations/sheridan">Sheridan</Link>
               </li>
               <li className={styles.dropdownItem}>
-                <Link href="/whyUnlimited">Why Unlimited?</Link>
+                <Link href="/whyUnlimited">Casper</Link>
               </li>
               <li className={styles.dropdownItem}>
-                <Link href="/whyUnlimited">Why Unlimited?</Link>
+                <Link href="/whyUnlimited">Gillette</Link>
               </li>
             </ul>
           </li>
