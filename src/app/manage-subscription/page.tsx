@@ -25,7 +25,9 @@ const ManageSubscription: React.FC = () => {
                 pass to a new vehicle? Please stop by any Let ‘Er Buck location.
               </p>
             </div>
-            <ManageSubForm />
+            <div className={styles.contactForm}>
+              <ManageSubForm />
+            </div>
             <h3 className={styles.contentH4}>
               <strong>Are you looking to cancel your membership?</strong>
             </h3>

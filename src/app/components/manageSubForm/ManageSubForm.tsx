@@ -58,70 +58,80 @@ const ManageAccountForm = () => {
       <h3 className={styles.formHeader}>Change Pass</h3>
 
       <div className={styles.formFeild}>
-        <label htmlFor="name">First</label>
-        <input
-          type="text"
-          id="firstName"
-          name="firstName"
-          value={formData.firstName}
-          onChange={handleChange}
-          required
-        />
-        <label htmlFor="email">Last:</label>
-        <input
-          type="text"
-          id="lastName"
-          name="lastName"
-          value={formData.lastName}
-          onChange={handleChange}
-          required
-        />
+        <div className={styles.formItem}>
+          <label htmlFor="name">First</label>
+          <input
+            type="text"
+            id="firstName"
+            name="firstName"
+            value={formData.firstName}
+            onChange={handleChange}
+            required
+          />
+        </div>
+        <div className={styles.formItem}>
+          <label htmlFor="email">Last</label>
+          <input
+            type="text"
+            id="lastName"
+            name="lastName"
+            value={formData.lastName}
+            onChange={handleChange}
+            required
+          />
+        </div>
       </div>
 
       <div className={styles.formFeild}>
-        <label htmlFor="email">Email:</label>
-        <input
-          type="email"
-          id="email"
-          name="email"
-          value={formData.email}
-          onChange={handleChange}
-          required
-        />
-      </div>
-      <div className={styles.formFeild}>
-        <label htmlFor="phone">Phone:</label>
-        <input
-          type="tel"
-          id="phone"
-          name="phone"
-          value={formData.phone}
-          onChange={handleChange}
-          required
-        />
+        <div className={styles.formItem}>
+          <label htmlFor="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            value={formData.email}
+            onChange={handleChange}
+            required
+          />
+        </div>
+
+        <div className={styles.formItem}>
+          <label htmlFor="phone">Phone</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            value={formData.phone}
+            onChange={handleChange}
+            required
+          />
+        </div>
       </div>
 
       <div className={styles.formFeild}>
-        <label htmlFor="plateNum">License Plate Number:</label>
-        <input
-          type="text"
-          id="plateNum"
-          name="plateNum"
-          value={formData.plateNum}
-          onChange={handleChange}
-          required
-        />
-      </div>
-      <div className={styles.formFeild}>
-        <label htmlFor="sticker">Windshield Sticker Number</label>
-        <input
-          type="text"
-          id="sticker"
-          name="sticker"
-          value={formData.sticker}
-          onChange={handleChange}
-          required
-        />
+        <div className={styles.formItem}>
+          <label htmlFor="plateNum">License Plate Number:</label>
+          <input
+            type="text"
+            id="plateNum"
+            name="plateNum"
+            value={formData.plateNum}
+            onChange={handleChange}
+            required
+          />
+        </div>
+
+        <div className={styles.formItem}>
+          <label htmlFor="sticker">Windshield Sticker Number</label>
+          <input
+            type="text"
+            id="sticker"
+            name="sticker"
+            value={formData.sticker}
+            onChange={handleChange}
+            required
+          />
+        </div>
       </div>
       <div className={styles.formFeild}>
         <label htmlFor="locationSelect">
@@ -142,7 +152,7 @@ const ManageAccountForm = () => {
         </select>
       </div>
 
-      <div className={styles.formFeild}>
+      <div>
         <label>Subscription Type:</label>
         <div>
           <input
@@ -190,14 +200,16 @@ const ManageAccountForm = () => {
         </div>
       </div>
       <div className={styles.formFeild}>
-        <label htmlFor="comments">Any additional comments?</label>
-        <textarea
-          id="comments"
-          name="comments"
-          value={formData.comments}
-          onChange={handleChange}
-          required
-        />
+        <div className={styles.formItem}>
+          <label htmlFor="comments">Any additional comments?</label>
+          <textarea
+            id="comments"
+            name="comments"
+            value={formData.comments}
+            onChange={handleChange}
+            required
+          />
+        </div>
       </div>
       <input
         type="image"

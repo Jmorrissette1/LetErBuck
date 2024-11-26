@@ -1,0 +1,49 @@
+.formItem {
+  display: flex;
+  flex-direction: column;
+}
+
+.formHeader {
+  margin: 1rem 0;
+  font-family: var(--arvo-font);
+  color: #301c11;
+}
+
+.formFeild {
+  font-weight: bold;
+  font-family: var(--arvo-font);
+  display: flex;
+  flex-direction: row;
+  align-items: left;
+  margin: 0.5rem 0;
+}
+
+.formFeild input {
+  margin-top: 10px;
+  width: 275px;
+  height: 35px;
+  border: 1px solid #fed771;
+  margin-right: 10px;
+}
+
+.submitFormBtn {
+  margin-top: 1rem;
+  width: 150px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.form {
+  margin-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+}
+
+.formFeild textarea {
+  margin-top: 10px;
+  width: 400px;
+  height: 200px;
+  border: 1px solid #fed771;
+}

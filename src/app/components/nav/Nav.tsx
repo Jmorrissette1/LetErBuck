@@ -8,7 +8,7 @@ const Nav: React.FC = () => {
     <nav className={styles.nav}>
       <div className={styles.weatherStrip}>Test</div>
       <div className={styles.weatherStrip}>
-        <Link href="/managesub">Manage Your Subscrption</Link>
+        <Link href="/manage-subscription">Manage Your Subscrption</Link>
       </div>
       <div className={styles.navBar}>
         <ul className={styles.navList}>
