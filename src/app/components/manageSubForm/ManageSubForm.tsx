@@ -8,14 +8,10 @@ const ManageAccountForm = () => {
     lastName: "",
     email: "",
     phone: "",
-    location: "",
-    fundraiserType: "",
-    timeline: "",
-    participants: "",
-    nameOnCheck: "",
-    checkMessage: "",
-    fundsMessage: "",
-    addressMessage: "",
+    plateNum: "",
+    sticker: "",
+    locationSelect: "default",
+    subscriptionType: "",
     comments: "",
   };
 
@@ -23,7 +19,9 @@ const ManageAccountForm = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+    e: React.ChangeEvent<
+      HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
+    >
   ) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
@@ -32,7 +30,7 @@ const ManageAccountForm = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch("/api/send-fundraising-email", {
+      const response = await fetch("/api/manage-sub", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -103,85 +101,96 @@ const ManageAccountForm = () => {
         />
       </div>
 
-      <h3 className={styles.formHeader}>Event Details</h3>
       <div className={styles.formFeild}>
-        <label htmlFor="phone">Fundraiser Type:</label>
+        <label htmlFor="plateNum">License Plate Number:</label>
         <input
           type="text"
-          id="fufundraiserType"
-          name="fundraiserType"
-          value={formData.fundraiserType}
+          id="plateNum"
+          name="plateNum"
+          value={formData.plateNum}
           onChange={handleChange}
           required
         />
       </div>
       <div className={styles.formFeild}>
-        <label htmlFor="phone">Let&apos;er Buck Location:</label>
+        <label htmlFor="sticker">Windshield Sticker Number</label>
         <input
           type="text"
-          id="location"
-          name="location"
-          value={formData.location}
+          id="sticker"
+          name="sticker"
+          value={formData.sticker}
           onChange={handleChange}
           required
         />
       </div>
       <div className={styles.formFeild}>
-        <label htmlFor="timeline">Desired Timeline:</label>
-        <input
-          type="date"
-          id="timeline"
-          name="timeline"
-          value={formData.timeline}
+        <label htmlFor="locationSelect">
+          Location where Pass was purchased:
+        </label>
+        <select
+          id="locationSelect"
+          name="locationSelect"
+          value={formData.locationSelect}
           onChange={handleChange}
           required
-        />
-      </div>
-      <div className={styles.formFeild}>
-        <label htmlFor="participants">Number of Participants:</label>
-        <input
-          type="text"
-          id="participants"
-          name="participants"
-          value={formData.participants}
-          onChange={handleChange}
-          required
-        />
+        >
+          <option value="default">---</option>
+          <option value="Sheridan">Sheridan</option>
+          <option value="Casper2nd">Casper - 2nd Street</option>
+          <option value="CasperCY">Casper - CY Street</option>
+          <option value="Gillette">Gillette</option>
+        </select>
       </div>
 
       <div className={styles.formFeild}>
-        <label htmlFor="nameOnCheck">Name on Check:</label>
-        <input
-          type="text"
-          id="nameOnCheck"
-          name="nameOnCheck"
-          value={formData.nameOnCheck}
-          onChange={handleChange}
-          required
-        />
+        <label>Subscription Type:</label>
+        <div>
+          <input
+            type="radio"
+            id="wyomingWorks"
+            name="subscriptionType"
+            value="Wyoming Works"
+            checked={formData.subscriptionType === "Wyoming Works"}
+            onChange={handleChange}
+          />
+          <label htmlFor="wyomingWorks">Wyoming Works</label>
+        </div>
+        <div>
+          <input
+            type="radio"
+            id="steamboatCeramics"
+            name="subscriptionType"
+            value="Steamboat Ceramics"
+            checked={formData.subscriptionType === "Steamboat Ceramics"}
+            onChange={handleChange}
+          />
+          <label htmlFor="steamboatCeramics">Steamboat Ceramic</label>
+        </div>
+        <div>
+          <input
+            type="radio"
+            id="bigHorn"
+            name="subscriptionType"
+            value="Big Horn"
+            checked={formData.subscriptionType === "Big Horn"}
+            onChange={handleChange}
+          />
+          <label htmlFor="bighorn">Big Horn Experience</label>
+        </div>
+        <div>
+          <input
+            type="radio"
+            id="blackTooth"
+            name="subscriptionType"
+            value="Black Tooth"
+            checked={formData.subscriptionType === "Black Tooth"}
+            onChange={handleChange}
+          />
+          <label htmlFor="blackTooth">Black Tooth Deluxe</label>
+        </div>
       </div>
       <div className={styles.formFeild}>
-        <label htmlFor="checkMessage">Address to send check:</label>
-        <textarea
-          id="checkMessage"
-          name="checkMessage"
-          value={formData.checkMessage}
-          onChange={handleChange}
-          required
-        />
-      </div>
-      <div className={styles.formFeild}>
-        <label htmlFor="fundsMessage">How will the funds be used?</label>
-        <textarea
-          id="fundsMessage"
-          name="fundsMessage"
-          value={formData.addressMessage}
-          onChange={handleChange}
-          required
-        />
-      </div>
-      <div className={styles.formFeild}>
-        <label htmlFor="comments">Additional comments:</label>
+        <label htmlFor="comments">Any additional comments?</label>
         <textarea
           id="comments"
           name="comments"
