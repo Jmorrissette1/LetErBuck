@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import Nav from "@/app/components/nav/Nav";
 import Footer from "@/app/components/footer/Footer";
 import ContentBox from "@/app/components/contentBox/ContentBox";
@@ -35,6 +36,14 @@ const ManageSubscription: React.FC = () => {
               Check out our other pass options below or click the button to get
               in touch about cancellation.
             </p>
+            <div className={styles.cancelBtn}>
+              <Image
+                src="/images/cancel-sub.png"
+                alt="Cancel Subscription"
+                width={250}
+                height={25}
+              />
+            </div>
           </ContentBox>
           <SpecialsBanner />
         </div>

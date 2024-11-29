@@ -4,6 +4,7 @@ import Footer from "@/app/components/footer/Footer";
 import ContentBox from "@/app/components/contentBox/ContentBox";
 import SpecialsBanner from "@/app/components/specialsBanner/SpecialsBanner";
 import styles from "@/app/page.module.css";
+
 const AboutPage: React.FC = () => {
   return (
     <div className={styles.page}>
@@ -19,6 +20,7 @@ const AboutPage: React.FC = () => {
               <p className={styles.contentP}>
                 Email: info@leterbuckcarwash.com
               </p>
+              <h1 className="text-3xl font-bold underline">Hello Test</h1>
             </div>
           </ContentBox>
           <SpecialsBanner />

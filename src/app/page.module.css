@@ -116,3 +116,8 @@
 .contactForm {
   padding: 25px;
 }
+
+.cancelBtn {
+  padding: 25px;
+  margin-left: 1rem;
+}
