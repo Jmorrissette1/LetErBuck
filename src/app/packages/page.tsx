@@ -33,7 +33,7 @@ const Packages: React.FC = () => {
                 <div className="flag"></div>
               </div>
             </div>
-            <ul className="active" name="top-package">
+            <ul className="active top-package">
               <li className="included">Carnauba Wax</li>
               <li className="included">Ceramic Hi-Foam</li>
               <li className="included">Ceramic Sealant</li>
@@ -76,7 +76,7 @@ const Packages: React.FC = () => {
                 ></Image>
               </li>
             </ul>
-            <ul name="big-horn">
+            <ul className="big-horn">
               <li className="included">Carnauba Wax</li>
               <li className="not-included">Ceramic Hi-Foam</li>
               <li className="not-included">Ceramic Sealant</li>
@@ -98,7 +98,7 @@ const Packages: React.FC = () => {
                 ></Image>
               </li>
             </ul>
-            <ul name="black-tooth">
+            <ul className="black-tooth">
               <li className="not-included">Carnauba Wax</li>
               <li className="not-included">Ceramic Hi-Foam</li>
               <li className="not-included">Ceramic Sealant</li>
