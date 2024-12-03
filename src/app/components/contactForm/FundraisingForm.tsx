@@ -180,7 +180,7 @@ const FundraisingForm = () => {
         <textarea
           id="fundsMessage"
           name="fundsMessage"
-          value={formData.addressMessage}
+          value={formData.fundsMessage}
           onChange={handleChange}
           required
         />
