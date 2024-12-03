@@ -182,7 +182,6 @@ const FundraisingForm = () => {
           name="fundsMessage"
           value={formData.fundsMessage}
           onChange={handleChange}
-          required
         />
       </div>
       <div className={styles.formFeild}>
