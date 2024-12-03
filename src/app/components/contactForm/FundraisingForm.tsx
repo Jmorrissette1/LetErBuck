@@ -176,7 +176,7 @@ const FundraisingForm = () => {
         />
       </div>
       <div className={styles.formFeild}>
-        <label htmlFor="fundsMessage">How will the funds be used?</label>
+        <label htmlFor="fundsMessage">How will the funds be used?:</label>
         <textarea
           id="fundsMessage"
           name="fundsMessage"
