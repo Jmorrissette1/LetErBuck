@@ -15,8 +15,8 @@ const FundraisingForm = () => {
     participants: "",
     nameOnCheck: "",
     checkMessage: "",
-    fundsMessage: "",
     addressMessage: "",
+    fundsMessage: "",
     comments: "",
   };
 
