@@ -23,11 +23,21 @@ const Footer: React.FC = () => {
                 className={styles.joinNow}
               />
             </li>
-            <li className={styles.listItem}>Package</li>
-            <li className={styles.listItem}>Fundraising</li>
-            <li className={styles.listItem}>About Us</li>
-            <li className={styles.listItem}>Locations</li>
-            <li className={styles.listItem}>Manage Your Subscription</li>
+            <li className={styles.listItem}>
+              <Link href="/packages">Packages</Link>
+            </li>
+            <li className={styles.listItem}>
+              <Link href="/fundraising">Fundraising</Link>
+            </li>
+            <li className={styles.listItem}>
+              <Link href="/about">About Us</Link>
+            </li>
+            <li className={styles.listItem}>
+              <Link href="locations/sheridan">Locations</Link>
+            </li>
+            <li className={styles.listItem}>
+              <Link href="/manage-subscription">Manage Your Subscription</Link>
+            </li>
             <li>
               {" "}
               <Link href="https://www.carwashlogin.com/leterbuckcarwash/customerportal/virtualwashbooks.aspx">

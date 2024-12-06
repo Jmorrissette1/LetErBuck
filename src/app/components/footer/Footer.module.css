@@ -93,6 +93,10 @@
   animation: 2s linear infinite forwards sway;
 }
 
+a:hover {
+  color: #fff;
+}
+
 @keyframes sway {
   0% {
     transform: rotate(5deg);
