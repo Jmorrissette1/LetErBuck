@@ -24,7 +24,9 @@ const SheridanPage: React.FC = () => {
               <p className={styles.contentP}>
                 Address: 624 East Brundage Lane, Sheridan, WY, 82801
               </p>
-              <Hours />
+              <div className={styles.hoursBox}>
+                <Hours />
+              </div>
             </div>
             <div className="google-map">
               <iframe

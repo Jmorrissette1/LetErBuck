@@ -16,7 +16,6 @@ const FundraisingForm = () => {
     nameOnCheck: "",
     checkMessage: "",
     addressMessage: "",
-    fundsMessage: "",
     comments: "",
   };
 
@@ -175,15 +174,7 @@ const FundraisingForm = () => {
           required
         />
       </div>
-      <div className={styles.formFeild}>
-        <label htmlFor="fundsMessage">How will the funds be used?:</label>
-        <textarea
-          id="fundsMessage"
-          name="fundsMessage"
-          value={formData.fundsMessage}
-          onChange={handleChange}
-        />
-      </div>
+
       <div className={styles.formFeild}>
         <label htmlFor="comments">Additional comments:</label>
         <textarea
