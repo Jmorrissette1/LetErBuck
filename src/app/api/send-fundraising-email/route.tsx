@@ -46,7 +46,7 @@ export async function POST(req: NextRequest) {
       <p><strong>Fundraiser Type:</strong> ${fundraiserType}</p>
       <p><strong>Let'er Buck Location:</strong> ${location}</p>
       <p><strong>Desired Timeline:${timeline}</p>
-      <p><strong>Desired Timeline:${participants}</p>
+      <p><strong>Number of Participants${participants}</p>
       <p><strong>Address To send Check: </strong>${checkMessage}</p>
       <p><strong>Address To send Check: </strong>${addressMessage}</p>
       <p><strong>How will the funds be used?</strong>${fundsMessage}</p>

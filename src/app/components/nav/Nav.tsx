@@ -59,10 +59,10 @@ const Nav: React.FC = () => {
                 <Link href="/locations/sheridan">Sheridan</Link>
               </li>
               <li className={styles.dropdownItem}>
-                <Link href="/whyUnlimited">Casper</Link>
+                <Link href="/locations/casper">Casper</Link>
               </li>
               <li className={styles.dropdownItem}>
-                <Link href="/whyUnlimited">Gillette</Link>
+                <Link href="/locations/gillette">Gillette</Link>
               </li>
             </ul>
           </li>

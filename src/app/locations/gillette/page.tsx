@@ -6,13 +6,13 @@ import SpecialsBanner from "@/app/components/specialsBanner/SpecialsBanner";
 import styles from "@/app/page.module.css";
 import Hours from "@/app/components/hours/Hours";
 
-const SheridanPage: React.FC = () => {
+const GillettePage: React.FC = () => {
   return (
     <div className={styles.page}>
       <Nav />
       <main className={styles.main}>
         <div className={styles.pageHeader}>
-          <h1 className={styles.pageH1}>Sheridan Location</h1>
+          <h1 className={styles.pageH1}>Gillette Location</h1>
         </div>
         <div className={styles.contentContainer}>
           <ContentBox>
@@ -29,7 +29,7 @@ const SheridanPage: React.FC = () => {
             <div className="google-map">
               <iframe
                 style={{ border: 0 }}
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2832.371112606473!2d-106.94764338485001!3d44.77323897909885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5335f06d1edc39df%3A0x9bdcbb5a199b232f!2s624+E+Brundage+Ln%2C+Sheridan%2C+WY+82801!5e0!3m2!1sen!2sus!4v1513121127458"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2856.6142680005896!2d-105.49877358758255!3d44.276754711757235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5334942d37c4e66f%3A0xf7ebe04dbcb11256!2s617%20Boxelder%20Rd%2C%20Gillette%2C%20WY%2082718!5e0!3m2!1sen!2sus!4v1704748073501!5m2!1sen!2sus"
                 width="400"
                 height="300"
                 frameBorder="0"
@@ -45,4 +45,4 @@ const SheridanPage: React.FC = () => {
   );
 };
 
-export default SheridanPage;
+export default GillettePage;

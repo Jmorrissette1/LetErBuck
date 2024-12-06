@@ -75,7 +75,7 @@ const Footer: React.FC = () => {
             </div>
             <div>
               <Image
-                src="images/facebook.svg"
+                src="/images/facebook.svg"
                 alt="facebook Icon"
                 width={50}
                 height={50}
