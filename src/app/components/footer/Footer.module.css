@@ -93,7 +93,7 @@
   animation: 2s linear infinite forwards sway;
 }
 
-a:hover {
+a::hover {
   color: #fff;
 }
 
