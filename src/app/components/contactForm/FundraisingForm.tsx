@@ -113,7 +113,7 @@ const FundraisingForm = () => {
         <label htmlFor="phone">Fundraiser Type:</label>
         <input
           type="text"
-          id="fufundraiserType"
+          id="fundraiserType"
           name="fundraiserType"
           value={formData.fundraiserType}
           onChange={handleChange}
