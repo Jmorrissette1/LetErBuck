@@ -44,7 +44,10 @@ const Nav: React.FC = () => {
                 <Link href="/about">About Us</Link>
               </li>
               <li className={styles.dropdownItem}>
-                <Link href="https://recruiting2.ultipro.com/HAS1005HLW/JobBoard/d43ae63f-9557-4817-8bc4-4a941ab5fd79/?q=&o=postedDateDesc&w=&wc=&we=&wpst=">
+                <Link
+                  href="https://recruiting2.ultipro.com/HAS1005HLW/JobBoard/d43ae63f-9557-4817-8bc4-4a941ab5fd79/?q=&o=postedDateDesc&w=&wc=&we=&wpst="
+                  target="_blank"
+                >
                   Careers
                 </Link>
                 <Link href="/faq">FAQ</Link>
