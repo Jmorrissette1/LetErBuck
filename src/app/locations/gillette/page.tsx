@@ -4,7 +4,7 @@ import Footer from "@/app/components/footer/Footer";
 import ContentBox from "@/app/components/contentBox/ContentBox";
 import SpecialsBanner from "@/app/components/specialsBanner/SpecialsBanner";
 import styles from "@/app/page.module.css";
-import Hours from "@/app/components/hours/Hours";
+import Hours from "@/app/components/shared/hours";
 
 const GillettePage: React.FC = () => {
   return (

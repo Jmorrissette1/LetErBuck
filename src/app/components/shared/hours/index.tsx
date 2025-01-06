@@ -1,9 +1,8 @@
 import React from "react";
-import styles from "./Hours.module.css";
 
-const Hours: React.FC = () => {
+const Hours = () => {
   return (
-    <div className={styles.hoursBox}>
+    <div>
       <h2> Wash Hours </h2>
       <p>*Hours typically change at Daylight savings time</p>
       <p>Mon-Sat</p>
