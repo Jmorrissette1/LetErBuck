@@ -7,8 +7,8 @@ interface ContentBoxProps {
 
 const ContentBox: React.FC<ContentBoxProps> = ({ children }) => {
   return (
-    <div className={styles.test}>
-      <div className={styles.test}>
+    <div className="flex-row">
+      <div className="flex-row">
         <div className={`${styles.contentContainer} ${styles.column}`}>
           <div className={styles.contentBox}> {children} </div>
         </div>

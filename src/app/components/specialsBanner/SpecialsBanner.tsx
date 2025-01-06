@@ -2,7 +2,7 @@ import Image from "next/image";
 import React from "react";
 import styles from "./SpecialsBanner.module.css";
 
-const SpecialsBanner: React.FC = () => {
+const SpecialsBanner = () => {
   return (
     <div className={styles.specialsBanner}>
       <div>
@@ -29,8 +29,9 @@ const SpecialsBanner: React.FC = () => {
           </div>
         </div>
         <Image
+          className="ml-8"
           src="/banner-arrow.png"
-          alt="blue sign me up button"
+          alt="banner arrow"
           width={220}
           height={35}
         ></Image>

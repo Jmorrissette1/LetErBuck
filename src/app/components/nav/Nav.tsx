@@ -6,8 +6,9 @@ import styles from "./Nav.module.css";
 const Nav: React.FC = () => {
   return (
     <nav className={styles.nav}>
-      <div className={styles.weatherStrip}>Test</div>
-      <div className={styles.weatherStrip}>
+      <div className="flex-between -mb-20 mt-16">
+        <div className={styles.weatherStrip}>Test</div>
+        <div className={styles.weatherStrip}></div>
         <Link href="/manage-subscription">Manage Your Subscrption</Link>
       </div>
       <div className={styles.navBar}>
