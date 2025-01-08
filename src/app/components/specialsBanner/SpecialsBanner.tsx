@@ -39,7 +39,7 @@ const SpecialsBanner = () => {
               height={35}
             ></Image>
             <div className="text-center mb-2">
-              <div className="p">
+              <div>
                 <em>Keep your car clean for</em>
               </div>
               <div className="p">
