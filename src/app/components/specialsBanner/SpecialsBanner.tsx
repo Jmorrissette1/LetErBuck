@@ -47,65 +47,127 @@ const SpecialsBanner = () => {
               </div>
             </div>
           </div>
-          <div className="flex justify-around mb-2">
+          <div className="flex justify-evenly mb-2">
             <div className="text-center">
-              <div className={classNames("font-l", styles.packageP)}>
+              <div className={classNames("text-base", styles.packageP)}>
                 The Wyoming
               </div>
-              <div className="p font-l">Works</div>
+              <div
+                className={classNames("text-xl", "leading-4", styles.packageP)}
+              >
+                Works
+              </div>
             </div>
             <div>
-              <div className="text-center">$35/MO.</div>
+              <div
+                className={classNames(
+                  "text-lg",
+                  "text-center",
+                  "mb-1",
+                  styles.packageP
+                )}
+              >
+                $35/MO.
+              </div>
               <Image
                 src="/images/sign-up.png"
                 alt="Blue Sign up button"
                 width={120}
                 height={25}
+                className={styles.pulse}
+              />
+            </div>
+          </div>
+          <div className="flex justify-evenly mb-2">
+            <div className="text-center ml-4">
+              <div className={classNames("text-base", styles.packageP)}>
+                Steamboat
+              </div>
+              <div
+                className={classNames("text-xl", "leading-4", styles.packageP)}
+              >
+                Ceramic
+              </div>
+            </div>
+            <div className="ml-5">
+              <div
+                className={classNames(
+                  "text-lg",
+                  "text-center",
+                  "mb-1",
+                  styles.packageP
+                )}
+              >
+                $32/MO.
+              </div>
+              <Image
+                src="/images/sign-up.png"
+                alt="Blue Sign up button"
+                width={120}
+                height={25}
+                className={styles.pulse}
               />
             </div>
           </div>
           <div className="flex justify-around mb-2">
-            <div className="text-center">
-              <div className="p font-l">Steamboat</div>
-              <div className="p font-l">Ceramic</div>
+            <div className="text-center ml-4">
+              <div className={classNames("text-base", styles.packageP)}>
+                Big Horn
+              </div>
+              <div
+                className={classNames("text-xl", "leading-4", styles.packageP)}
+              >
+                Experience
+              </div>
             </div>
-            <div className="text-center">
-              <div className="text-center">$32/MO.</div>
+            <div className="mr-2">
+              <div
+                className={classNames(
+                  "text-lg",
+                  "text-center",
+                  "mb-1",
+                  styles.packageP
+                )}
+              >
+                $27/MO.
+              </div>
               <Image
                 src="/images/sign-up.png"
                 alt="Blue Sign up button"
                 width={120}
                 height={25}
-              />
-            </div>
-          </div>
-          <div className="flex justify-around mb-2">
-            <div className="text-center">
-              <div className="p font-l">Big Horn</div>
-              <div className="p font-l">Experience</div>
-            </div>
-            <div>
-              <div className="text-center">$27/MO.</div>
-              <Image
-                src="/images/sign-up.png"
-                alt="Blue Sign up button"
-                width={120}
-                height={25}
+                className={styles.pulse}
               />
             </div>
           </div>
           <div className="flex justify-around">
-            <div className="text-center">
-              <div className="p font-l">Black Tooth</div>
-              <div className="p font-l">Deluxe</div>
+            <div className="text-center ml-4">
+              <div className={classNames("text-base", styles.packageP)}>
+                Black Tooth
+              </div>
+              <div
+                className={classNames("text-xl", "leading-4", styles.packageP)}
+              >
+                Deluxe
+              </div>
             </div>
-            <div>
-              <div className="text-center mb-2">$20/MO.</div>
+            <div className="mr-1">
+              <div
+                className={classNames(
+                  "text-lg",
+                  "text-center",
+                  "mb-1",
+                  styles.packageP
+                )}
+              >
+                $20/MO.
+              </div>
               <Image
                 src="/images/sign-up.png"
                 alt="Blue Sign up button"
                 width={120}
                 height={25}
+                className={styles.pulse}
               />
             </div>
           </div>
