@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import classNames from "classnames";
 import Nav from "../components/nav/Nav";
 import SpecialsBanner from "../components/specialsBanner/SpecialsBanner";
 import ContentBox from "../components/contentBox/ContentBox";
@@ -13,7 +14,9 @@ const Fundraising: React.FC = () => {
       <Nav />
       <main className={styles.main}>
         <div className={styles.pageHeader}>
-          <h1 className={styles.pageH1}>Fundraising</h1>
+          <h1 className={classNames("text-9xl", "leading-4", styles.pageH1)}>
+            Fundraising
+          </h1>
           <h2 className={styles.pageH2}>
             Learn more about partnering with Let&apos;Er Buck to raise money!
           </h2>

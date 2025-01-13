@@ -65,3 +65,23 @@
   right: -90px;
   top: -150px;
 }
+
+@media (max-width: 768px) {
+  .contentContainer:before {
+    display: none;
+  }
+  .contentContainer:after {
+    display: none;
+  }
+
+  .contentContainer {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .contentBox {
+    max-width: 345px;
+    border-left: none;
+    border-right: none;
+    background: #fff;
+  }
+}

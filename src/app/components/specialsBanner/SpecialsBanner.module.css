@@ -87,3 +87,10 @@
   opacity: 0;
   animation: fadeIn 2s forwards;
 }
+
+@media (max-width: 768px) {
+  .specialsBanner {
+    margin-top: 0;
+    margin-left: 0;
+  }
+}

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import Link from "next/link";
 import classNames from "classnames";
 import styles from "./SpecialsBanner.module.css";
 
@@ -69,13 +70,15 @@ const SpecialsBanner = () => {
               >
                 $35/MO.
               </div>
-              <Image
-                src="/images/sign-up.png"
-                alt="Blue Sign up button"
-                width={120}
-                height={25}
-                className={styles.pulse}
-              />
+              <Link href="/manage-subscription" target="_blank">
+                <Image
+                  src="/images/sign-up.png"
+                  alt="Blue Sign up button"
+                  width={120}
+                  height={25}
+                  className={styles.pulse}
+                />
+              </Link>
             </div>
           </div>
           <div className="flex justify-evenly mb-2">
@@ -100,13 +103,15 @@ const SpecialsBanner = () => {
               >
                 $32/MO.
               </div>
-              <Image
-                src="/images/sign-up.png"
-                alt="Blue Sign up button"
-                width={120}
-                height={25}
-                className={styles.pulse}
-              />
+              <Link href="/manage-subscription" target="_blank">
+                <Image
+                  src="/images/sign-up.png"
+                  alt="Blue Sign up button"
+                  width={120}
+                  height={25}
+                  className={styles.pulse}
+                />
+              </Link>
             </div>
           </div>
           <div className="flex justify-around mb-2">
@@ -131,13 +136,15 @@ const SpecialsBanner = () => {
               >
                 $27/MO.
               </div>
-              <Image
-                src="/images/sign-up.png"
-                alt="Blue Sign up button"
-                width={120}
-                height={25}
-                className={styles.pulse}
-              />
+              <Link href="/manage-subscription" target="_blank">
+                <Image
+                  src="/images/sign-up.png"
+                  alt="Blue Sign up button"
+                  width={120}
+                  height={25}
+                  className={styles.pulse}
+                />
+              </Link>
             </div>
           </div>
           <div className="flex justify-around">
@@ -162,18 +169,20 @@ const SpecialsBanner = () => {
               >
                 $20/MO.
               </div>
-              <Image
-                src="/images/sign-up.png"
-                alt="Blue Sign up button"
-                width={120}
-                height={25}
-                className={styles.pulse}
-              />
+              <Link href="/manage-subscription" target="_blank">
+                <Image
+                  src="/images/sign-up.png"
+                  alt="Blue Sign up button"
+                  width={120}
+                  height={25}
+                  className={styles.pulse}
+                />
+              </Link>
             </div>
           </div>
           <div className="flex-col ml-4 mt-4">
             <h2>Why join a wash club?</h2>
-            <ul>
+            <ul className={styles.specialList}>
               <li>Always have a clean car!</li>
               <li>Exlusive perks!</li>
               <li>Fast LANE!</li>

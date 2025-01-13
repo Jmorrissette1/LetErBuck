@@ -99,3 +99,12 @@
   color: #fff;
   text-decoration: underline;
 }
+
+@media (max-width: 768px) {
+  .navBar {
+    background-image: none;
+  }
+  .navLogo {
+    width: 100px;
+  }
+}

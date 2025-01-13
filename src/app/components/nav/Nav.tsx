@@ -8,12 +8,21 @@ const Nav: React.FC = () => {
     <nav className={styles.nav}>
       <div className="flex-between -mb-20 mt-16">
         <div className="div flex-start">
-          
-          <div className={styles.weatherStrip}>Test</div>
+          <div className={styles.weatherStrip}>
+            <Image
+              src="/images/weather.svg"
+              alt="weather-icon"
+              width={25}
+              height={25}
+            ></Image>
+            Test
+          </div>
           <div className={styles.weatherStrip}>Test</div>
           <div className={styles.weatherStrip}>Test</div>
         </div>
-        <Link href="/manage-subscription">Manage Your Subscrption</Link>
+        <div className="z-10">
+          <Link href="/manage-subscription">Manage Your Subscrption</Link>
+        </div>
       </div>
       <div className={styles.navBar}>
         <ul className={styles.navList}>

@@ -14,6 +14,7 @@ const ManageSubscription: React.FC = () => {
       <main className={styles.main}>
         <div className={styles.pageHeader}>
           <h1 className={styles.pageH1}>Manage Your Subscription</h1>
+          <h2>PLEASE ALLOW 72 HRS FOR CHANGES TO TAKE PLACE</h2>
         </div>
         <div className={styles.contentContainer}>
           <ContentBox>
