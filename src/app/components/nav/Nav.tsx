@@ -2,11 +2,12 @@ import Image from "next/image";
 import React from "react";
 import Link from "next/link";
 import styles from "./Nav.module.css";
+import classNames from "classnames";
 
 const Nav: React.FC = () => {
   return (
     <nav className={styles.nav}>
-      <div className="flex-between -mb-20 mt-16">
+      <div className={classNames("flex-between", "-mb-20", "mt-16")}>
         <div className="div flex-start">
           <div className={styles.weatherStrip}>
             <Image
@@ -83,6 +84,24 @@ const Nav: React.FC = () => {
               </li>
             </ul>
           </li>
+        </ul>
+      </div>
+      <div className={styles.mobileNav}>
+        <Link href="/">
+          <Image
+            src="/LEB-Logo.svg"
+            alt="Cowboy riding a car"
+            width={208}
+            height={230}
+            className={styles.navLogo}
+          ></Image>
+        </Link>
+        <input id={styles.menuToggle} type="checkbox" />
+        <label className={styles.menuButtonContainer} htmlFor="menu-toggle">
+          <div className={styles.menuButton}></div>
+        </label>
+        <ul className={styles.navList}>
+          <li>Test</li>
         </ul>
       </div>
     </nav>

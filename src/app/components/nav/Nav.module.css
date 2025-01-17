@@ -100,11 +100,138 @@
   text-decoration: underline;
 }
 
+.mobileNav {
+  display: none;
+}
+
 @media (max-width: 768px) {
   .navBar {
+    display: none;
     background-image: none;
   }
+  .mobileNav {
+    display: block;
+  }
+
   .navLogo {
     width: 100px;
+  }
+
+  .menuButtonContainer {
+    display: flex;
+    margin-top: 2rem;
+    margin-right: 1rem;
+    height: 100%;
+    width: 30px;
+    cursor: pointer;
+    flex-direction: column;
+  }
+
+  #menuToggle {
+    display: none;
+  }
+
+  .menu {
+    align-items: flex-start;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .menu > li {
+    margin: 0 1rem;
+    overflow: hidden;
+  }
+
+  .menu-button-container {
+    display: flex;
+    margin-top: 2rem;
+    margin-right: 1rem;
+    height: 100%;
+    width: 30px;
+    cursor: pointer;
+    flex-direction: column;
+  }
+
+  #menu-toggle {
+    display: none;
+  }
+
+  .menu-button,
+  .menu-button::before,
+  .menu-button::after {
+    display: block;
+    background-color: #fff;
+    position: absolute;
+    height: 4px;
+    width: 30px;
+    transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    border-radius: 2px;
+  }
+
+  .menu-button::before {
+    content: "";
+    margin-top: -8px;
+  }
+
+  .menu-button::after {
+    content: "";
+    margin-top: 8px;
+  }
+
+  #menu-toggle:checked + .menu-button-container .menu-button::before {
+    margin-top: 0px;
+    transform: rotate(405deg);
+  }
+
+  #menu-toggle:checked + .menu-button-container .menu-button {
+    background: var(--menu-color);
+  }
+
+  #menu-toggle:checked + .menu-button-container .menu-button::after {
+    margin-top: 0px;
+    transform: rotate(-405deg);
+  }
+
+  .menu {
+    position: absolute;
+    top: 0;
+    margin-top: 6rem;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hamburger-menu-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: left;
+    width: 100%;
+    background-color: #085f9d;
+    text-align: left;
+  }
+
+  #menu-toggle ~ .menu li {
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  #menu-toggle:checked ~ .menu li {
+    height: auto;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  .menu > li {
+    display: flex;
+    margin: 0;
+    width: 100%;
+    color: white;
+    background-color: var(--menu-color);
+  }
+  .menu > li:not(:last-child) {
+    border-bottom: 1px solid #444;
   }
 }
