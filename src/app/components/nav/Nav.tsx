@@ -1,7 +1,7 @@
 import Image from "next/image";
-import React from "react";
 import Link from "next/link";
 import styles from "./Nav.module.css";
+import HamburgerMenu from "../HambugerMenu/HamburgerMenu";
 import classNames from "classnames";
 
 const Nav: React.FC = () => {
@@ -21,7 +21,7 @@ const Nav: React.FC = () => {
           <div className={styles.weatherStrip}>Test</div>
           <div className={styles.weatherStrip}>Test</div>
         </div>
-        <div className="z-10">
+        <div className={classNames("z-10", styles.manageSubscription)}>
           <Link href="/manage-subscription">Manage Your Subscrption</Link>
         </div>
       </div>
@@ -86,23 +86,8 @@ const Nav: React.FC = () => {
           </li>
         </ul>
       </div>
-      <div className={styles.mobileNav}>
-        <Link href="/">
-          <Image
-            src="/LEB-Logo.svg"
-            alt="Cowboy riding a car"
-            width={208}
-            height={230}
-            className={styles.navLogo}
-          ></Image>
-        </Link>
-        <input id={styles.menuToggle} type="checkbox" />
-        <label className={styles.menuButtonContainer} htmlFor="menu-toggle">
-          <div className={styles.menuButton}></div>
-        </label>
-        <ul className={styles.navList}>
-          <li>Test</li>
-        </ul>
+      <div className={styles.hambugerMenu}>
+        <HamburgerMenu />
       </div>
     </nav>
   );
