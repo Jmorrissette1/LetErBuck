@@ -1,33 +1,19 @@
 .mobileNav {
-  position: relative;
   display: flex;
   justify-content: space-between;
 }
 
-.menuButton {
-  background: none;
-  border: none;
-  font-size: 24px;
-  cursor: pointer;
+.navList {
+  font-size: 1rem;
 }
 
-.menuLinks {
-  position: absolute;
-  top: 40px;
-  left: 0;
-  background-color: white;
-  border: 1px solid #ccc;
-  padding: 10px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+.navList li {
+  font-size: 1rem;
+  font-family: var(--arvo-font);
 }
 
-.menuLinks a {
-  display: block;
-  padding: 10px 0;
-  color: black;
+.navListItem {
   text-decoration: none;
-}
-
-.menuLinks a:hover {
-  background-color: #f0f0f0;
+  font-size: 1.2rem;
+  font-family: var(--arvo-font);
 }
