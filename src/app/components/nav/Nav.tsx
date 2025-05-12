@@ -8,19 +8,6 @@ const Nav: React.FC = () => {
   return (
     <nav className={styles.nav}>
       <div className={classNames("flex-between", "-mb-20", "mt-16")}>
-        <div className="div flex-start">
-          <div className={styles.weatherStrip}>
-            <Image
-              src="/images/weather.svg"
-              alt="weather-icon"
-              width={25}
-              height={25}
-            ></Image>
-            Test
-          </div>
-          <div className={styles.weatherStrip}>Test</div>
-          <div className={styles.weatherStrip}>Test</div>
-        </div>
         <div className={classNames("z-10", styles.manageSubscription)}>
           <Link href="/manage-subscription">Manage Your Subscrption</Link>
         </div>

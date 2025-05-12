@@ -1,8 +1,6 @@
 import React from "react";
-import Image from "next/image";
 import Nav from "../components/nav/Nav";
 import Footer from "../components/footer/Footer";
-import ContentBox from "../components/contentBox/ContentBox";
 import styles from "../page.module.css";
 
 const Packages: React.FC = () => {
@@ -13,116 +11,49 @@ const Packages: React.FC = () => {
         <div>
           <h1>Wash Packages</h1>
         </div>
-        <ContentBox>
-          <div className="services-desktop clearfix">
-            <div className="packages">
-              <div className="top-package the-package selected">
-                <span></span>
-                <div className="flag"></div>
+
+        <div className="package-section">
+          <div className="package-card">
+            <div className="package-card-header">
+              <h1 className="package-h1">
+                <em>Wyoming Works</em>
+              </h1>
+            </div>
+            <div className="package-price-row">
+              <div className="package-price">
+                <p className="price">
+                  $25<span className="text-2xl">ea.</span>
+                </p>
+                <p className="price-type">Single Wash</p>
               </div>
-              <div className="cloud-peak the-package">
-                <span></span>
-                <div className="flag"></div>
-              </div>
-              <div className="big-horn the-package">
-                <span></span>
-                <div className="flag"></div>
-              </div>
-              <div className="black-tooth the-package">
-                <span></span>
-                <div className="flag"></div>
+              <div className="vertical-line"></div>
+              <div className="package-price">
+                <p className="text-5xl">
+                  $35<span className="text-2xl font-bold">/mo.</span>
+                </p>
+                <p className="price-type">Unlimited Wash</p>
               </div>
             </div>
-            <ul className="active top-package">
-              <li className="included">Carnauba Wax</li>
-              <li className="included">Ceramic Hi-Foam</li>
-              <li className="included">Ceramic Sealant</li>
-              <li className="included">Dash Wipe</li>
-              <li className="included">Tri Color</li>
-              <li className="included">Wheel Cleaner</li>
-              <li className="included">Underbody Rinse</li>
-              <li className="included">Bug Buster</li>
-              <li className="included">Foam Bath</li>
-              <li className="included">High Pressure Rinse</li>
-              <li className="included">Vortex Dry</li>
-              <li className="price">
-                <Image
-                  src="/images/steamboat-ceramic.png"
-                  alt="22 dollar single wash"
-                  width={145}
-                  height={150}
-                ></Image>
-              </li>
-            </ul>
-            <ul className="cloud-peak">
-              <li className="not-included">Carnauba Wax</li>
-              <li className="included">Ceramic Hi-Foam</li>
-              <li className="included">Ceramic Sealant</li>
-              <li className="included">Dash Wipe</li>
-              <li className="included">Tri Color</li>
-              <li className="included">Wheel Cleaner</li>
-              <li className="included">Underbody Rinse</li>
-              <li className="included">Clear Coat Protectant</li>
-              <li className="included">Bug Buster</li>
-              <li className="included">Foam Bath</li>
-              <li className="included">High Pressure Rinse</li>
-              <li className="included">Vortex Dry</li>
-              <li className="price">
-                <Image
-                  src="/images/steamboatx.png"
-                  alt="20 dollar single wash"
-                  width={145}
-                  height={150}
-                ></Image>
-              </li>
-            </ul>
-            <ul className="big-horn">
-              <li className="included">Carnauba Wax</li>
-              <li className="not-included">Ceramic Hi-Foam</li>
-              <li className="not-included">Ceramic Sealant</li>
-              <li className="included">Dash Wipe</li>
-              <li className="included">Tri Color</li>
-              <li className="included">Wheel Cleaner</li>
-              <li className="included">Underbody Rinse</li>
-              <li className="included">Clear Coat Protectant</li>
-              <li className="included">Bug Buster</li>
-              <li className="included">Foam Bath</li>
-              <li className="included">High Pressure Rinse</li>
-              <li className="included">Vortex Dry</li>
-              <li className="price">
-                <Image
-                  src="/images/big-horn.png"
-                  alt="17 dollar single wash"
-                  width={145}
-                  height={150}
-                ></Image>
-              </li>
-            </ul>
-            <ul className="black-tooth">
-              <li className="not-included">Carnauba Wax</li>
-              <li className="not-included">Ceramic Hi-Foam</li>
-              <li className="not-included">Ceramic Sealant</li>
-              <li className="not-included">Wheel Cleaner</li>
-              <li className="not-included">Underbody Rinse</li>
-              <li className="not-included">Clear Coat Protectant</li>
-              <li className="not-included">Bug Buster</li>
-              <li className="included">Dash Wipe</li>
-              <li className="included">Tri Color</li>
-              <li className="included">Foam Bath</li>
-              <li className="included">High Pressure Rinse</li>
-              <li className="included">Vortex Dry</li>
-              <li className="included">Clean & Dry</li>
-              <li className="price">
-                <Image
-                  src="/images/blacktooth.png"
-                  alt="12 dollar single wash"
-                  width={145}
-                  height={150}
-                ></Image>
-              </li>
-            </ul>
           </div>
-        </ContentBox>
+          <div className="package-list">
+            <div className="package-col">
+              <p className="package-h3">Carnauba Wax</p>
+              <p className="package-h3">Ceramic Hi-Foam</p>
+              <p className="package-h3">Ceramic Sealant</p>
+              <p className="package-h3">Dash Wipe</p>
+              <p className="package-h3">Tri Color</p>
+            </div>
+            <div className="package-col">
+              <p className="package-h3">Wheel Cleaner</p>
+              <p className="package-h3">Underbody Rinse</p>
+              <p className="package-h3">Bug Buster</p>
+              <p className="package-h3">Foam Bath</p>
+              <p className="package-h3">High Pressure Rinse</p>
+              <p>Vortex Dry</p>
+              <button className="package-btn">Learn More</button>
+            </div>
+          </div>
+        </div>
       </main>
       <Footer />
     </div>
