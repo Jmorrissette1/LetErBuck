@@ -10,7 +10,7 @@ const Footer: React.FC = () => {
         alt="brown mountain"
         width={1200}
         height={270}
-      />
+        className={styles.footerMountian}/>
       <div className={styles.footerBody}>
         <div className={styles.footerYellowBar}>
           <ul className={styles.footerNav}>
@@ -55,10 +55,10 @@ const Footer: React.FC = () => {
           <div className={styles.addressLine}>
             <div className={styles.row}>
               <p className={styles.footerP}>
-                <strong>(307)675-1935</strong> &bull;
+                <strong>(307)675-1935</strong> 
               </p>
-              <p className={styles.footerP}>624 East Brundage Lane &bull;</p>
-              <p className={styles.footerP}>Sheridan, Wyoming 82801</p>
+              <p className={styles.footerP}>&bull; 624 East Brundage Lane </p>
+              <p className={styles.footerP}>&bull; Sheridan, Wyoming 82801</p>
             </div>
             <div>
               <p className={styles.footerP}>Click Here for Hours</p>
@@ -109,7 +109,7 @@ const Footer: React.FC = () => {
           </div>
         </div>
         <p className={styles.footerP}>
-          Copyright © 2024 Let&apos;Er Buck Car Wash. All Rights Reserved.
+          Copyright © 2025 Let&apos;Er Buck Car Wash. All Rights Reserved.
         </p>
       </div>
     </div>

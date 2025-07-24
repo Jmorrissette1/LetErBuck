@@ -32,7 +32,7 @@
   align-items: center;
   margin-top: -1rem;
   width: 100vw;
-  height: auto;
+  
   background-color: #301c11;
 }
 
@@ -104,3 +104,29 @@
     transform: rotate(5deg);
   }
 }
+
+@media (max-width: 768px) {
+  .footerNav {
+   display: none;
+  }
+
+  .footerMountian {
+    height: 100px;
+  }
+
+  .addressBox {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footerP{
+  font-size: 12px;
+  text-align: center;
+  }
+
+  .addressLine{
+    margin-right: 0;
+    text-align: center;
+  }
+}
+
+
