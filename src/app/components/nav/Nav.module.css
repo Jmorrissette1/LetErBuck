@@ -108,6 +108,11 @@
   display: none;
 }
 
+.manageSubscription{
+  font-size: 18px;
+  color: #fff;
+}
+
 @media (max-width: 768px) {
   .navBar {
     display: none;
