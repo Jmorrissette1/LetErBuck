@@ -88,6 +88,9 @@
 .vacutechImage {
   margin: 1rem 0.5rem;
 }
+ .addressBoxM{
+    display: none;
+  }
 
 .joinNow {
   animation: 2s linear infinite forwards sway;
@@ -106,6 +109,14 @@
 }
 
 @media (max-width: 768px) {
+    .addressBox {
+    display: none;
+  }
+
+  .addressBoxM{
+    display: flex;
+    flex-direction: column;
+  }
   .footerNav {
    display: none;
   }
@@ -114,18 +125,31 @@
     height: 100px;
   }
 
-  .addressBox {
+  .footerAddressBox{
+    display: flex;
     flex-direction: column;
     align-items: center;
   }
-  .footerP{
-  font-size: 12px;
-  text-align: center;
+
+  .footerH3{
+    color: #fff;
+    font-family: var(--arvo-font);
+
+  }
+  .footerBtn{
+    width: 220px;
+    height: 50px;
+    background-color: #f8c24c;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-family: var(--arvo-font);   
   }
 
-  .addressLine{
-    margin-right: 0;
+  .footerP{
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
     text-align: center;
+    font-size: 10px;
   }
 }
 

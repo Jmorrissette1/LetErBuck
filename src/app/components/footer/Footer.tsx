@@ -108,10 +108,33 @@ const Footer: React.FC = () => {
             </div>
           </div>
         </div>
+         <div className={styles.addressBoxM}>
+          <div className={styles.footerAddressBox}>
+            <h3 className={styles.footerH3}>Sheridan</h3>
+            <button className={styles.footerBtn}>Directions & More</button>
+            <h3 className={styles.footerH3}>2nd St Casper</h3>
+            <button className={styles.footerBtn}>Directions & More</button>
+            <h3 className={styles.footerH3}>CY Ave Casper</h3>
+            <button className={styles.footerBtn}>Directions & More</button>
+            <h3 className={styles.footerH3}>Gillette</h3>
+            <button className={styles.footerBtn}>Directions & More</button>
+            <h3 className={styles.footerH3}>Jacksonhole</h3>
+            <button className={styles.footerBtn}>Directions & More</button>
+          </div>
+         </div>
+          <div>
+              <Image
+                src="/images/facebook.svg"
+                alt="facebook Icon"
+                width={50}
+                height={50}
+              />
+            </div>
         <p className={styles.footerP}>
           Copyright © 2025 Let&apos;Er Buck Car Wash. All Rights Reserved.
         </p>
       </div>
+
     </div>
   );
 };
