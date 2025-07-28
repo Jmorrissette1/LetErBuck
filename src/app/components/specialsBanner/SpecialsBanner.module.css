@@ -47,6 +47,24 @@
   font-family: var(--rye);
 }
 
+.specialsList {
+  list-style: none;
+  padding: 0;
+  margin-left: 1.5rem
+}
+.specialsListItem::before {
+  content: "✓";
+  margin-right: 0.5rem;
+  
+}
+
+.specialsH2{
+  font-family: var(--rye);
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  margin-left: 0.5rem;
+}
+
 @keyframes sway {
   0% {
     transform: rotate(-5deg);

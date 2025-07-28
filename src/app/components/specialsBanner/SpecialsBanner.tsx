@@ -181,12 +181,12 @@ const SpecialsBanner = () => {
             </div>
           </div>
           <div className="flex-col ml-4 mt-4">
-            <h2>Why join a wash club?</h2>
-            <ul className={styles.specialList}>
-              <li>Always have a clean car!</li>
-              <li>Exlusive perks!</li>
-              <li>Fast LANE!</li>
-              <li>Paid for in two washes!</li>
+            <h2 className={styles.specialsH2}>Why join a wash club?</h2>
+            <ul className={styles.specialsList}>
+              <li className={styles.specialsListItem}>Always have a clean car!</li>
+              <li className={styles.specialsListItem}>Exlusive perks!</li>
+              <li className={styles.specialsListItem}>Fast LANE!</li>
+              <li className={styles.specialsListItem}>Paid for in two washes!</li>
             </ul>
           </div>
         </div>

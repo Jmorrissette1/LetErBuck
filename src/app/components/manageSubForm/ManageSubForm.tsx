@@ -208,6 +208,7 @@ const ManageAccountForm = () => {
             value={formData.comments}
             onChange={handleChange}
             required
+           className={styles.textarea}
           />
         </div>
       </div>

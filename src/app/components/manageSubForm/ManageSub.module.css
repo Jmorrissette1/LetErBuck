@@ -47,3 +47,15 @@
   height: 200px;
   border: 1px solid #fed771;
 }
+
+
+@media (max-width: 768px) {
+  .formFeild { 
+  flex-direction: column;
+ }
+
+  .formFeild textarea {
+    width: 275px;
+  
+  }
+}

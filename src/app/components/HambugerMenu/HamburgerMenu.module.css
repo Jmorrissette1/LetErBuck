@@ -10,6 +10,7 @@
 .navList li {
   font-size: 1rem;
   font-family: var(--arvo-font);
+  margin-bottom: 1rem;
 }
 
 .navListItem {
@@ -19,6 +20,17 @@
 }
 
 .navLink{
-      font-size: 18px;
+      font-size: 19px;
 
+}
+
+.navButton {
+  background-color: #2b1507;
+  font-family: var(--arvo-font);
+  height: 60px;
+  padding: 0 20px;
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
 }

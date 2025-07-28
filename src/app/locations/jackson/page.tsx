@@ -12,7 +12,7 @@ const JacksonHolePage: React.FC = () => {
       <Nav />
       <main className={styles.main}>
         <div className={styles.pageHeader}>
-          <h1 className={styles.pageH1}>Gillette Location</h1>
+          <h1 className={styles.pageH1}>Jackson Location</h1>
         </div>
         <div className={styles.contentContainer}>
           <ContentBox>

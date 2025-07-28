@@ -3,10 +3,13 @@ import Nav from "./components/nav/Nav";
 import HomeBanner from "./components/homeBanner/HomeBanner";
 import Footer from "./components/footer/Footer";
 
+
 export default function Home() {
   return (
     <div>
+    
       <main className={styles.main}>
+        
         <Nav />
         <div>
           <video autoPlay muted loop className={styles.videoBackground}>

@@ -42,3 +42,9 @@
   height: 25px;
   cursor: pointer;
 }
+
+@media (max-width: 768px) {
+  .contactForm{
+    padding: 15px;
+  }
+}

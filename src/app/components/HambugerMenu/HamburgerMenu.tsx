@@ -23,7 +23,7 @@ import styles from "./HamburgerMenu.module.css";
 const HamburgerMenu: React.FC = () => {
   return (
     <div className="flex">
-      <div>
+      <div><Link href="/">
         <Image
           src="/LEB-Logo.svg"
           alt="Cowboy riding a car"
@@ -31,6 +31,7 @@ const HamburgerMenu: React.FC = () => {
           height={100}
           className={styles.navLogo}
         ></Image>
+        </Link>
       </div>
       <div>
         <Sheet>
@@ -93,11 +94,27 @@ const HamburgerMenu: React.FC = () => {
                 </Accordion>
               </li>
               <li className={styles.navListItem}>
-                <Link href="/about">Locations</Link>
+                  <Accordion type="single" collapsible>
+                  <AccordionItem value="item-3">
+                    <AccordionTrigger>
+                      <div className={styles.navListItem}>
+                    <Link href="/locations/casper">Locations</Link>
+                    </div>
+                    </AccordionTrigger>
+                    <AccordionContent>
+                    <ul>
+                      <li><Link href="/locations/casper">Casper</Link></li>
+                      <li><Link href="/locations/sheridan">Sheridan</Link></li>
+                      <li><Link href="/locations/gillette">Gillette</Link></li>
+                      <li><Link href="/locations/jackson">Jackson</Link></li>
+                    </ul>
+                    </AccordionContent>
+                </AccordionItem>
+                </Accordion>
               </li>
 
               <li className={styles.navListItem}>
-                <Link href="/about"><button>Manage Your Subscription</button></Link>
+                <Link href="/manage-subscription"><button className={styles.navButton}>Manage Your Subscription</button></Link>
               </li>
             </ul>
           </SheetContent>
