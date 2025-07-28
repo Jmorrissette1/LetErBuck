@@ -121,10 +121,7 @@
    display: none;
   }
 
-  .footerMountian {
-    height: 100px;
-  }
-
+ 
   .footerAddressBox{
     display: flex;
     flex-direction: column;

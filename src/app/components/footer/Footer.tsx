@@ -6,10 +6,11 @@ const Footer: React.FC = () => {
   return (
     <div className={styles.footerSection}>
       <Image
-        src={"/images/footer.svg"}
+        src={"/images/footer.webp"}
         alt="brown mountain"
         width={1200}
         height={270}
+        priority
         className={styles.footerMountian}/>
       <div className={styles.footerBody}>
         <div className={styles.footerYellowBar}>
