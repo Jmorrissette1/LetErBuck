@@ -85,6 +85,8 @@
 .contentH4 {
   font-family: var(--arvo-font);
   padding: 10px 40px;
+  font-weight: bold;
+  font-size: 20px;
 }
 
 .fundrasingImg {
@@ -131,4 +133,34 @@
     display: flex;
     flex-direction: column;
   }
+  .pageHeader{
+    width: 90%;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .pageH1 {
+  font-size: 32px;
+  padding: 10px 25px;
+  }
+
+  .pageH2{
+    margin-top: 1rem;
+    font-size: 18px;
+  }
+  .contentLi{
+    padding: 10px 45px;
+    list-style: disc;
+  }
+
+  .contentH4{
+    padding: 10px 25px;
+    font-size: 18px;
+    
+  }
+  
+  .contentP{
+    padding: 10px 25px;
+  }
+
 }

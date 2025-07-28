@@ -37,7 +37,7 @@ const Fundraising: React.FC = () => {
               out the form below and get in touch with us to discuss how we can
               help raise money for your program.
             </p>
-            <h4 className={styles.contentP}>
+            <h4 className={styles.contentH4}>
               2. RAFFLE/SILENT AUCTION DONATIONS
             </h4>
             <p className={styles.contentP}>

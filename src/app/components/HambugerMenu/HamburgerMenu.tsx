@@ -61,10 +61,10 @@ const HamburgerMenu: React.FC = () => {
                     <AccordionContent>
                       <ul>
                         <li>
-                          <Link href="#">Wash Packages</Link>
+                          <Link href="/packages">Wash Packages</Link>
                         </li>
                         <li>
-                          <Link href="#">Why Unlimited?</Link>
+                          <Link href="/whyUnlimited">Why Unlimited?</Link>
                         </li>
                       </ul>
                     </AccordionContent>
@@ -72,19 +72,22 @@ const HamburgerMenu: React.FC = () => {
                 </Accordion>
               </li>
               <li className={styles.navListItem}>
-                <Link href="/fundraising">Fundraising</Link>
+                <Link href="/fundraising" className={styles.navLink}>Fundraising</Link>
               </li>
               <li className={styles.navListItem}>
                 <Accordion type="single" collapsible>
                   <AccordionItem value="item-2">
                     <AccordionTrigger>
                       <div className={styles.navListItem}>
-                        <Link href="/packages">About Us</Link>
+                        <Link href="/about">About Us</Link>
                       </div>
                     </AccordionTrigger>
                     <AccordionContent>
-                      <Link href="#">Wash Packages</Link>
-                      <Link href="#">Why Unlimited?</Link>
+                      <ul>
+                      <li><Link href="/about">About Us</Link></li>
+                      <li><Link href="https://recruiting2.ultipro.com/HAS1005HLW/JobBoard/d43ae63f-9557-4817-8bc4-4a941ab5fd79/?q=&o=postedDateDesc&w=&wc=&we=&wpst=">Careers</Link></li>
+                      <Link href="/faq">FAQ</Link>
+                      </ul>
                     </AccordionContent>
                   </AccordionItem>
                 </Accordion>
@@ -94,7 +97,7 @@ const HamburgerMenu: React.FC = () => {
               </li>
 
               <li className={styles.navListItem}>
-                <Link href="/about">Manage Your Subscription</Link>
+                <Link href="/about"><button>Manage Your Subscription</button></Link>
               </li>
             </ul>
           </SheetContent>

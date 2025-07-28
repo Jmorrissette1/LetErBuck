@@ -7,8 +7,8 @@
 .contentContainer {
   position: relative;
   width: 100%;
-  padding-top: 40px; /* Adjust based on the height of the top image */
-  padding-bottom: 90px; /* Adjust based on the height of the bottom image */
+  padding-top: 40px; 
+  padding-bottom: 90px; 
 }
 
 .contentBox {
@@ -79,6 +79,7 @@
     padding-bottom: 0;
   }
   .contentBox {
+    padding-top: 25px;
     max-width: 345px;
     border-left: none;
     border-right: none;
