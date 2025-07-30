@@ -36,6 +36,7 @@ const CasperPage: React.FC = () => {
                 height="300"
                 frameBorder="0"
                 allowFullScreen
+                className={styles.googleMap}
               ></iframe>
             </div>
             <p className={styles.contentP}>
@@ -52,6 +53,7 @@ const CasperPage: React.FC = () => {
                 height="300"
                 frameBorder="0"
                 allowFullScreen
+                className={styles.googleMap}
               ></iframe>
             </div>
           </ContentBox>

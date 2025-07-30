@@ -162,5 +162,14 @@
   .contentP{
     padding: 10px 25px;
   }
+  .locationBox {
+  width: 100%;
+}
+
+.googleMap{
+  width: 300px;
+  height: 300px;
+  margin-left: -1rem;
+}
 
 }
