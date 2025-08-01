@@ -19,11 +19,12 @@ import Link from "next/link";
 import Image from "next/image";
 
 import styles from "./HamburgerMenu.module.css";
+import { EllipsisVertical } from "lucide-react";
 
 const HamburgerMenu: React.FC = () => {
   return (
-    <div className="flex">
-      <div><Link href="/">
+    <div className={styles.hamburgerNav}>
+      <div ><Link href="/">
         <Image
           src="/LEB-Logo.svg"
           alt="Cowboy riding a car"
@@ -35,7 +36,7 @@ const HamburgerMenu: React.FC = () => {
       </div>
       <div>
         <Sheet>
-          <SheetTrigger>Open</SheetTrigger>
+          <SheetTrigger className="align-middle"><EllipsisVertical /></SheetTrigger>
           <SheetContent className={styles.sheetBackground}>
             <SheetHeader>
               <SheetTitle>

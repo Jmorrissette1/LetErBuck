@@ -34,3 +34,11 @@
   font-size: 1rem;
   cursor: pointer;
 }
+
+.hamburgerNav{
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
