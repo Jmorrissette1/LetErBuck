@@ -69,6 +69,9 @@ const Nav: React.FC = () => {
               <li className={styles.dropdownItem}>
                 <Link href="/locations/gillette">Gillette</Link>
               </li>
+              <li className={styles.dropdownItem}>
+                <Link href="/locations/jackson">Jackson</Link>
+              </li>
             </ul>
           </li>
         </ul>
