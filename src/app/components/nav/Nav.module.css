@@ -108,9 +108,12 @@
   display: none;
 }
 
-.manageSubscription{
+.manageSubscription {
+  position: relative;
   font-size: 18px;
   color: #fff;
+  padding-bottom: 20px;
+  z-index: 100;
 }
 
 @media (max-width: 768px) {
@@ -118,12 +121,11 @@
     display: none;
     background-image: none;
   }
-  .nav{
+  .nav {
     margin-top: 1.2rem;
     display: flex;
   }
   .mobileNav {
-    
     display: block;
   }
   .mobileNav.open {

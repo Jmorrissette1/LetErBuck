@@ -8,7 +8,7 @@ const Nav: React.FC = () => {
   return (
     <nav className={styles.nav}>
       <div className={classNames("justify-self-end", "-mb-20", "mt-16")}>
-        <div className={classNames("z-10", styles.manageSubscription)}>
+        <div className={classNames("z-20", styles.manageSubscription)}>
           <Link href="/manage-subscription">Manage Your Subscription</Link>
         </div>
       </div>

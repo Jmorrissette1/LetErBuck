@@ -1,5 +1,9 @@
+
+import Image from "next/image";
 const banner = () => {
-    return ( <div>banner goes here</div> );
+    return ( <div>
+        Banner
+        </div> );
 }
  
 export default banner;
