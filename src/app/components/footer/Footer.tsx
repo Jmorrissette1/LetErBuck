@@ -84,6 +84,16 @@ const Footer: React.FC = () => {
             <div>
               <p className={styles.footerP}>Click Here for Hours</p>
             </div>
+            <div className={styles.row}>
+              <p className={styles.footerP}>
+                <strong>(307)201-5251</strong> 
+              </p>
+              <p className={styles.footerP}>&bull; 660 W Broadway</p>
+              <p className={styles.footerP}>&bull; Jackson, Wyoming 83001</p>
+            </div>
+            <div>
+              <p className={styles.footerP}>Click Here for Hours</p>
+            </div>
             <div>
               <Image
                 src="/images/facebook.svg"
