@@ -40,7 +40,7 @@ const JacksonHolePage: React.FC = () => {
               ></iframe>
             </div>
           </ContentBox>
-          <SpecialsBanner />
+         
         </div>
       </main>
       <Footer />
