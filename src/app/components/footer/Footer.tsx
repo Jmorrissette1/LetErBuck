@@ -110,12 +110,12 @@ const Footer: React.FC = () => {
                 <em>PROUDLY OFFERING THE WORLD’S MOST POWERFUL VACUUMS BY</em>
               </p>
               <div className={styles.vacutechImage}>
-                <Image
+                <Link href="https://vacutechllc.com/"><Image
                   src="/images/vacutech.png"
                   alt="Vault Tech Vacums"
                   width={115}
                   height={25}
-                />
+                /></Link>
               </div>
             </div>
           </div>
