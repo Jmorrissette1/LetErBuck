@@ -8,13 +8,13 @@ const SpecialsBanner = () => {
   return (
     <div className={styles.specialsBanner}>
       <div>
-        <Image
+        <Link href="https://www.carwashlogin.com/leterbuckcarwash/customerportal/signupforunlimited.aspx"><Image
           src="/images/best-value.png"
           alt="best value banner"
           width={75}
           height={75}
           className={styles.bestValueBtn}
-        />
+        /></Link>
         <div className={styles.fadeIn}>
           <div className="flex ml-4">
             <div>

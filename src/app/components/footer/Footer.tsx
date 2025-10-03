@@ -16,13 +16,14 @@ const Footer: React.FC = () => {
         <div className={styles.footerYellowBar}>
           <ul className={styles.footerNav}>
             <li className={`${styles.listItem}, ${styles.unlimited}`}>
-              <Image
+             <Link href="https://www.carwashlogin.com/leterbuckcarwash/customerportal/signupforunlimited.aspx"><Image
                 src={"/images/join.svg"}
                 alt="Join The Club"
                 width={75}
                 height={75}
                 className={styles.joinNow}
               />
+              </Link>
             </li>
             <li className={styles.listItem}>
               <Link href="/packages">Packages</Link>

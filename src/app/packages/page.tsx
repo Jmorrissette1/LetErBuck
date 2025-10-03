@@ -3,54 +3,173 @@ import Nav from "../components/nav/Nav";
 import Footer from "../components/footer/Footer";
 import styles from "../page.module.css";
 
+
 const Packages: React.FC = () => {
   return (
     <div className={styles.page}>
       <Nav />
       <main className={styles.main}>
         <div>
-          <h1>Wash Packages</h1>
+          <h1 className={styles.pageH1}>Wash Packages</h1>
         </div>
 
-        <div className="package-section">
-          <div className="package-card">
-            <div className="package-card-header">
-              <h1 className="package-h1">
+        <div className={styles.packageSection}>
+          <div className={styles.packageCard}>
+            <div className={styles.packageCardHeader}>
+              <h1 className={styles.packageH1}>
                 <em>Wyoming Works</em>
               </h1>
             </div>
-            <div className="package-price-row">
-              <div className="package-price">
-                <p className="price">
-                  $25<span className="text-2xl">ea.</span>
+            <div className={styles.packagePriceRow}>
+              <div className={styles.packagePrice}>
+                <p className={styles.price}>
+                  $25<span className={styles.text2xl}>ea.</span>
                 </p>
-                <p className="price-type">Single Wash</p>
+                <p className={styles.priceType}>Single Wash</p>
               </div>
-              <div className="vertical-line"></div>
-              <div className="package-price">
-                <p className="text-5xl">
-                  $35<span className="text-2xl font-bold">/mo.</span>
+              <div className={styles.verticalLine}></div>
+              <div className={styles.packagePrice}>
+                <p className={styles.price}>
+                  $35<span className={styles.text2xl}>/mo.</span>
                 </p>
-                <p className="price-type">Unlimited Wash</p>
+                <p className={styles.priceType}>Unlimited Wash</p>
               </div>
+                 
+            </div>
+            <button className={styles.packageBtn}>Sign Me Up</button>
+          </div>
+          
+          <div className={styles.packageList}>
+            <div className={styles.packageCol}>
+              <p className={styles.packageH3}>Carnauba Wax</p>
+              <p className={styles.packageH3}>Ceramic Hi-Foam</p>
+              <p className={styles.packageH3}>Ceramic Sealant</p>
+              <p className={styles.packageH3}>Dash Wipe</p>
+              <p className={styles.packageH3}>Tri Color</p>
+              <p className={styles.packageH3}>Wheel Cleaner</p>
+              <p className={styles.packageH3}>Underbody Rinse</p>
+              <p className={styles.packageH3}>Bug Buster</p>
+              <p className={styles.packageH3}>Foam Bath</p>
+              <p className={styles.packageH3}>High Pressure Rinse</p>
+              <p className={styles.packageH3}>Vortex Dry</p>
+           
             </div>
           </div>
-          <div className="package-list">
-            <div className="package-col">
-              <p className="package-h3">Carnauba Wax</p>
-              <p className="package-h3">Ceramic Hi-Foam</p>
-              <p className="package-h3">Ceramic Sealant</p>
-              <p className="package-h3">Dash Wipe</p>
-              <p className="package-h3">Tri Color</p>
+        </div>
+       
+        <div className={styles.packageSection}>
+          <div className={styles.packageCard}>
+            <div className={`${styles.packageCardHeader} ${styles.steamBoat}`}>
+              <h1 className={`${styles.packageH1}`}>
+                <em>SteamBoat Ceramic</em>
+              </h1>
             </div>
-            <div className="package-col">
-              <p className="package-h3">Wheel Cleaner</p>
-              <p className="package-h3">Underbody Rinse</p>
-              <p className="package-h3">Bug Buster</p>
-              <p className="package-h3">Foam Bath</p>
-              <p className="package-h3">High Pressure Rinse</p>
-              <p>Vortex Dry</p>
-              <button className="package-btn">Learn More</button>
+            <div className={styles.packagePriceRow}>
+              <div className={styles.packagePrice}>
+                <p className={styles.price}>
+                  $22<span className={styles.text2xl}>ea.</span>
+                </p>
+                <p className={styles.priceType}>Single Wash</p>
+              </div>
+              <div className={styles.verticalLine}></div>
+              <div className={styles.packagePrice}>
+                <p className={styles.price}>
+                  $32<span className={styles.text2xl}>/mo.</span>
+                </p>
+                <p className={styles.priceType}>Unlimited Wash</p>
+              </div>
+            </div>
+            <button className={styles.packageBtn}>Sign Me Up</button>
+          </div>
+          <div className={styles.packageList}>
+            <div className={styles.packageCol}>
+              <p className={styles.packageH3}>Ceramic Hi-Foam</p>
+              <p className={styles.packageH3}>Ceramic Sealant</p>
+              <p className={styles.packageH3}>Dash Wipe</p>
+              <p className={styles.packageH3}>Tri Color</p>
+              <p className={styles.packageH3}>Wheel Cleaner</p>
+              <p className={styles.packageH3}>Underbody Rinse</p>
+              <p className={styles.packageH3}>Bug Buster</p>
+              <p className={styles.packageH3}>Foam Bath</p>
+              <p className={styles.packageH3}>High Pressure Rinse</p>
+              <p className={styles.packageH3}>Vortex Dry</p>
+              
+            </div>
+          </div>
+        </div>
+
+          <div className={styles.packageSection}>
+          <div className={styles.packageCard}>
+            <div className={`${styles.packageCardHeader} ${styles.bigHorn}`}>
+              <h1 className={`${styles.packageH1}`}>
+                <em>Big Horn Experience</em>
+              </h1>
+            </div>
+            <div className={styles.packagePriceRow}>
+              <div className={styles.packagePrice}>
+                <p className={styles.price}>
+                  $17<span className={styles.text2xl}>ea.</span>
+                </p>
+                <p className={styles.priceType}>Single Wash</p>
+              </div>
+              <div className={styles.verticalLine}></div>
+              <div className={styles.packagePrice}>
+                <p className={styles.price}>
+                  $27<span className={styles.text2xl}>/mo.</span>
+                </p>
+                <p className={styles.priceType}>Unlimited Wash</p>
+              </div>
+            </div>
+            <button className={styles.packageBtn}>Sign Me Up</button>
+          </div>
+          <div className={styles.packageList}>
+            <div className={styles.packageCol}>
+               <p className={styles.packageH3}>Carnauba Wax</p>
+              <p className={styles.packageH3}>Dash Wipe</p>
+              <p className={styles.packageH3}>Tri Color</p>
+              <p className={styles.packageH3}>Wheel Cleaner</p>
+              <p className={styles.packageH3}>Underbody Rinse</p>
+              <p className={styles.packageH3}>Bug Buster</p>
+              <p className={styles.packageH3}>Foam Bath</p>
+              <p className={styles.packageH3}>High Pressure Rinse</p>
+              <p className={styles.packageH3}>Vortex Dry</p>
+              
+            </div>
+          </div>
+        </div>
+        
+          <div className={styles.packageSection}>
+          <div className={styles.packageCard}>
+            <div className={`${styles.packageCardHeader} ${styles.blackTooth}`}>
+              <h1 className={`${styles.packageH1}`}>
+                <em>Black Tooth Deluxe</em>
+              </h1>
+            </div>
+            <div className={styles.packagePriceRow}>
+              <div className={styles.packagePrice}>
+                <p className={styles.price}>
+                  $17<span className={styles.text2xl}>ea.</span>
+                </p>
+                <p className={styles.priceType}>Single Wash</p>
+              </div>
+              <div className={styles.verticalLine}></div>
+              <div className={styles.packagePrice}>
+                <p className={styles.price}>
+                  $20<span className={styles.text2xl}>/mo.</span>
+                </p>
+                <p className={styles.priceType}>Unlimited Wash</p>
+              </div>
+            </div>
+            <button className={styles.packageBtn}>Sign Me Up</button>
+          </div>
+          <div className={styles.packageList}>
+            <div className={styles.packageCol}>
+              <p className={styles.packageH3}>Dash Wipe</p>
+              <p className={styles.packageH3}>Tri Color</p>
+              <p className={styles.packageH3}>Foam Bath</p>
+              <p className={styles.packageH3}>High Pressure Rinse</p>
+              <p className={styles.packageH3}>Vortex Dry</p>
+              <p className={styles.packageH3}>Clean & Dry</p>
             </div>
           </div>
         </div>
