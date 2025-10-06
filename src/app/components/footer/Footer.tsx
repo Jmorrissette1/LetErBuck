@@ -130,7 +130,7 @@ const Footer: React.FC = () => {
             <button className={styles.footerBtn}>Directions & More</button>
             <h3 className={styles.footerH3}>Gillette</h3>
             <button className={styles.footerBtn}>Directions & More</button>
-            <h3 className={styles.footerH3}>Jacksonhole</h3>
+            <h3 className={styles.footerH3}>Jackson</h3>
             <button className={styles.footerBtn}>Directions & More</button>
           </div>
          </div>
