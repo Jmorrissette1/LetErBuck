@@ -1,5 +1,6 @@
 
 import type { Metadata } from "next";
+import { Toaster } from "react-hot-toast";
 import localFont from "next/font/local";
 import { Rye, Arvo } from "next/font/google";
 import "./globals.css";
@@ -46,6 +47,7 @@ export default function RootLayout({
       >
        <Banner />
         {children}
+        <Toaster position="top-center" reverseOrder={false} />
       </body>
     </html>
   );

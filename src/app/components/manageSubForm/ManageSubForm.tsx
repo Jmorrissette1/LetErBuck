@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import toast from "react-hot-toast";
 import styles from "./ManageSub.module.css";
 
 const ManageAccountForm = () => {
@@ -28,7 +29,8 @@ const ManageAccountForm = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-
+    
+    const toastId = toast.loading("📤 Sending email...");
     try {
       const response = await fetch("/api/manage-sub", {
         method: "POST",
@@ -39,14 +41,15 @@ const ManageAccountForm = () => {
       });
 
       if (response.ok) {
-        // Handle success
+        toast.success("✅ Email sent successfully!", { id: toastId });
         console.log("Email sent successfully");
         setFormData(initialFormData);
       } else {
-        // Handle error
+        toast.error("❌ Error sending email", { id: toastId });
         console.error("Error sending email");
       }
     } catch (error) {
+      toast.error("❌ Something went wrong. Try again.", { id: toastId });
       console.error(error);
     } finally {
       setIsSubmitting(false);

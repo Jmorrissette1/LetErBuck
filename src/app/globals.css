@@ -122,11 +122,27 @@ a {
   width: 100%;
   z-index: 50;
 }
+.banner-img-m {
+  display: none;
+}
 @layer base {
   * {
     @apply border-border;
   }
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+@media (max-width: 768px) {
+  .banner-img {
+    display: none;
+  }
+
+  .banner-img-m {
+    display: block;
+    position: relative;
+    width: 100%;
+    z-index: 50;
   }
 }
