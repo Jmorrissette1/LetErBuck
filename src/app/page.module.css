@@ -1,3 +1,9 @@
+.buttonCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
 /* video background */
 .videoBackground {
   position: fixed;
@@ -212,7 +218,6 @@
   font-size: 1.2rem;
   font-weight: bold;
   border: none;
-  margin-left: 125px;
   margin-top: 3rem;
   font-family: var(--arvo-font);
   background-color: #f8c24c;
@@ -282,6 +287,7 @@
     margin-bottom: 2rem;
   }
   .pageH1 {
+    margin-top: 3rem;
     font-size: 32px;
     padding: 10px 25px;
   }
@@ -311,5 +317,37 @@
     width: 300px;
     height: 300px;
     margin-left: -1rem;
+  }
+  .packageH1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .packageSection {
+    flex-direction: column;
+  }
+
+  .packageCol {
+    width: 100%;
+    opacity: 0;
+    animation: fadeIn 2s ease-in forwards;
+    text-align: center;
+  }
+
+  .packageCard {
+    width: 100%;
+    opacity: 0;
+    animation: fadeInLeft 2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+  }
+  .verticalLine {
+    display: none;
+  }
+  .packageList {
+    flex-direction: column;
+  }
+  .packagePriceRow {
+    flex-direction: column;
+  }
+  .packageBtn {
+    margin-left: 0;
   }
 }
