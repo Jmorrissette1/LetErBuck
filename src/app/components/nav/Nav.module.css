@@ -124,6 +124,8 @@
   .nav {
     margin-top: 1.2rem;
     display: flex;
+    background-color: #301c11;
+    border-bottom: 8px solid #fec325;
   }
   .mobileNav {
     display: block;

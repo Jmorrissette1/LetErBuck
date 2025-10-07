@@ -19,13 +19,12 @@
   font-family: var(--arvo-font);
 }
 
-.navLink{
-      font-size: 19px;
-
+.navLink {
+  font-size: 19px;
 }
 
 .navButton {
-  background-color: #2b1507;
+  background-color: #ffe9bd;
   font-family: var(--arvo-font);
   height: 60px;
   padding: 0 20px;
@@ -35,10 +34,14 @@
   cursor: pointer;
 }
 
-.hamburgerNav{
+.hamburgerNav {
   width: 100vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
+}
+
+.icon {
+  color: #ffe9bd;
 }

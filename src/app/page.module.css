@@ -256,6 +256,10 @@
   display: none;
 }
 
+.homeBtnBox {
+  display: none;
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -288,13 +292,62 @@
     background-image: url("/images/Mobile-Home-Background.png");
     background-size: cover;
     background-position: center;
-    min-height: 100vh;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 100vw;
+    min-height: 400px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    flex-direction: column;
     color: white;
   }
 
+  .homeH3 {
+    margin-top: 4rem;
+    font-size: 20px;
+    font-family: var(--arvo-font);
+  }
+
+  .homeH1 {
+    font-family: var(--rye);
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .homeP {
+    max-width: 270px;
+    text-align: center;
+    font-family: var(--arvo-font);
+  }
+
+  .homeBtnBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+
+  .learnMoreBtn {
+    width: 330px;
+    height: 50px;
+    font-family: var(--arvo-font);
+    color: #fff;
+    background-color: #420203;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  .signMeUpBtn {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 330px;
+    height: 50px;
+    font-family: var(--arvo-font);
+    background-color: #fec325;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
   .contentContainer {
     display: flex;
     flex-direction: column;

@@ -36,7 +36,7 @@ const HamburgerMenu: React.FC = () => {
       </div>
       <div>
         <Sheet>
-          <SheetTrigger className="align-middle"><EllipsisVertical /></SheetTrigger>
+          <SheetTrigger className="align-middle"><EllipsisVertical className={styles.icon} /></SheetTrigger>
           <SheetContent className={styles.sheetBackground}>
             <SheetHeader>
               <SheetTitle>
