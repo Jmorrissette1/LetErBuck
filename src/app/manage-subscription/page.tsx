@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Nav from "@/app/components/nav/Nav";
+import Link from "next/link";
 import Footer from "@/app/components/footer/Footer";
 import ContentBox from "@/app/components/contentBox/ContentBox";
 import SpecialsBanner from "@/app/components/specialsBanner/SpecialsBanner";
@@ -38,12 +39,12 @@ const ManageSubscription: React.FC = () => {
               in touch about cancellation.
             </p>
             <div className={styles.cancelBtn}>
-              <Image
+              <Link href="mailto:colin@leterbuckcarwash.com,cass@leterbuckcarwash.com?subject=Cancellation Request"><Image
                 src="/images/cancel-sub.png"
                 alt="Cancel Subscription"
                 width={250}
                 height={25}
-              />
+              /></Link>
             </div>
           </ContentBox>
           <SpecialsBanner />
