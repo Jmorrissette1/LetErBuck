@@ -123,15 +123,15 @@ const Footer: React.FC = () => {
          <div className={styles.addressBoxM}>
           <div className={styles.footerAddressBox}>
             <h3 className={styles.footerH3}>Sheridan</h3>
-            <button className={styles.footerBtn}>Directions & More</button>
+             <Link href="/locations/sheridan"><button className={styles.footerBtn}>Directions & More</button></Link>
             <h3 className={styles.footerH3}>2nd St Casper</h3>
-            <button className={styles.footerBtn}>Directions & More</button>
+             <Link href="/locations/casper"><button className={styles.footerBtn}>Directions & More</button></Link>
             <h3 className={styles.footerH3}>CY Ave Casper</h3>
-            <button className={styles.footerBtn}>Directions & More</button>
+             <Link href="/locations/gillette"><button className={styles.footerBtn}>Directions & More</button></Link>
             <h3 className={styles.footerH3}>Gillette</h3>
             <button className={styles.footerBtn}>Directions & More</button>
             <h3 className={styles.footerH3}>Jackson</h3>
-            <button className={styles.footerBtn}>Directions & More</button>
+             <Link href="/locations/jackson"><button className={styles.footerBtn}>Directions & More</button></Link>
           </div>
          </div>
           <div>
