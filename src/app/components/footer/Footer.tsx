@@ -144,14 +144,7 @@ const Footer: React.FC = () => {
              <Link href="/locations/jackson"><button className={styles.footerBtn}>Directions & More</button></Link>
           </div>
          </div>
-          <div>
-              <Image
-                src="/images/facebook.svg"
-                alt="facebook Icon"
-                width={50}
-                height={50}
-              />
-            </div>
+          
         <p className={styles.footerP}>
           Copyright © 2025 Let&apos;Er Buck Car Wash. All Rights Reserved.
         </p>

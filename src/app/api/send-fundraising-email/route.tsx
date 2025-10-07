@@ -34,7 +34,7 @@ export async function POST(req: NextRequest) {
 
     const mailOptions = {
       from: `Let er Buck Car Wash <${process.env.EMAIL_USER}>`,
-      to: process.env.EMAIL_FUND || "J.morrissette47@gmail.com", // Replace with the recipient's email address
+      to: "jmorrissette@haselwood.com, fundraising@leterbuckcarwash.com",
       subject: "Fundraising Request",
       html: `
       <h1>Contact Form Submission</h1>
