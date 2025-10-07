@@ -63,7 +63,7 @@ const Footer: React.FC = () => {
               <p className={styles.footerP}>&bull; Sheridan, Wyoming 82801</p>
             </div>
             <div>
-              <p className={styles.footerP}>Click Here for Hours</p>
+              <Link href="/locations/sheridan"><p className={styles.footerP}>Click Here for Hours</p></Link>
             </div>
             <div className={styles.row}>
               <p className={styles.footerP}>
@@ -73,7 +73,7 @@ const Footer: React.FC = () => {
               <p className={styles.footerP}>Casper, Wyoming 82609</p>
             </div>
             <div>
-              <p className={styles.footerP}>Click Here for Hours</p>
+              <Link href="/locations/casper"> <p className={styles.footerP}>Click Here for Hours</p></Link>
             </div>
             <div className={styles.row}>
               <p className={styles.footerP}>
@@ -83,7 +83,17 @@ const Footer: React.FC = () => {
               <p className={styles.footerP}>Casper, WY 82604</p>
             </div>
             <div>
-              <p className={styles.footerP}>Click Here for Hours</p>
+             <Link href="/locations/casper"><p className={styles.footerP}>Click Here for Hours</p></Link> 
+            </div>
+              <div className={styles.row}>
+              <p className={styles.footerP}>
+                <strong>(307)257-2021</strong> 
+              </p>
+              <p className={styles.footerP}>&bull; 617 Boxelder Rd</p>
+               <Link href="/locations/gillette"><p className={styles.footerP}>&bull; Gillette, WY 82718</p></Link>
+            </div>
+            <div>
+                <Link href="/locations/jackson"><p className={styles.footerP}>Click Here for Hours</p></Link>
             </div>
             <div className={styles.row}>
               <p className={styles.footerP}>
@@ -93,7 +103,7 @@ const Footer: React.FC = () => {
               <p className={styles.footerP}>&bull; Jackson, Wyoming 83001</p>
             </div>
             <div>
-              <p className={styles.footerP}>Click Here for Hours</p>
+                <Link href="/locations/jackson"><p className={styles.footerP}>Click Here for Hours</p></Link>
             </div>
             <div>
               <Image
@@ -127,9 +137,9 @@ const Footer: React.FC = () => {
             <h3 className={styles.footerH3}>2nd St Casper</h3>
              <Link href="/locations/casper"><button className={styles.footerBtn}>Directions & More</button></Link>
             <h3 className={styles.footerH3}>CY Ave Casper</h3>
-             <Link href="/locations/gillette"><button className={styles.footerBtn}>Directions & More</button></Link>
+            <Link href="/locations/casper"><button className={styles.footerBtn}>Directions & More</button></Link>
             <h3 className={styles.footerH3}>Gillette</h3>
-            <button className={styles.footerBtn}>Directions & More</button>
+             <Link href="/locations/gillette"><button className={styles.footerBtn}>Directions & More</button></Link>
             <h3 className={styles.footerH3}>Jackson</h3>
              <Link href="/locations/jackson"><button className={styles.footerBtn}>Directions & More</button></Link>
           </div>
