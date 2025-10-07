@@ -55,25 +55,23 @@ export async function POST(req: NextRequest) {
       ${data.comments ? `<p><strong>Additional comments:</strong><br/>${escapeHtml(data.comments)}</p>` : ""}
     `;
 
-    // 4) Configure O365 SMTP transporter (STARTTLS on 587)
+   
     const transporter = nodemailer.createTransport({
       host: "smtp.office365.com",
       port: 587,
-      secure: false,       // STARTTLS
+      secure: false,      
       requireTLS: true,
       auth: {
-        user: process.env.EMAIL_USER, // e.g. noreply@yourdomain.com
-        pass: process.env.EMAIL_PASS, // app password or mailbox password
+        user: process.env.EMAIL_USER, 
+        pass: process.env.EMAIL_PASS, 
       },
-      // Optional pooling if you expect bursts:
-      // pool: true, maxConnections: 3, maxMessages: 50,
     });
 
-    // 5) Send the email (from must be the O365 mailbox/alias)
+    
     await transporter.sendMail({
       from: `Let'er Buck Car Wash <${process.env.EMAIL_USER}>`,
       to: process.env.EMAIL_TO || "J.morrissette47@gmail.com",
-      replyTo: data.email, // safe: lets you reply to the customer
+      replyTo: data.email, 
       subject: `Manage Subscription – ${data.firstName} ${data.lastName}`,
       text: textBody,
       html: htmlBody,
