@@ -70,7 +70,7 @@ export async function POST(req: NextRequest) {
     
     await transporter.sendMail({
       from: `Let'er Buck Car Wash <${process.env.EMAIL_USER}>`,
-      to: process.env.EMAIL_TO || "J.morrissette47@gmail.com",
+      to:  "J.morrissette47@gmail.com",
       replyTo: data.email, 
       subject: `Manage Subscription – ${data.firstName} ${data.lastName}`,
       text: textBody,

@@ -17,7 +17,13 @@ export default function Home() {
             Your browser does not support the video tag.
           </video>
         </div>
+          <div className={styles.mobileHome}>
+              <h3>WELCOME TO</h3>
+              <h1>LET’ER BUCK CAR WASH</h1> 
+        </div>
+        <div className={styles.bannerM}>
         <HomeBanner />
+      </div>
       </main>
       <footer className={styles.footer}>
         <Footer />

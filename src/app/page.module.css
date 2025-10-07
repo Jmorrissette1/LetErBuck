@@ -252,6 +252,10 @@
   text-transform: uppercase;
 }
 
+.mobileHome {
+  display: none;
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -276,6 +280,21 @@
   .videoBackground {
     display: none;
   }
+  .bannerM {
+    display: none;
+  }
+  .mobileHome {
+    display: block;
+    background-image: url("/images/Mobile-Home-Background.png");
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+
   .contentContainer {
     display: flex;
     flex-direction: column;
