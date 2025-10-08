@@ -44,7 +44,7 @@ export async function POST(req: NextRequest) {
 
     const result = await verify.json();
     console.log("reCAPTCHA verify:", result);
-    
+
     if (!result.success) {
       return NextResponse.json({ message: "reCAPTCHA failed" }, { status: 400 });
     }
@@ -96,7 +96,7 @@ export async function POST(req: NextRequest) {
     
     await transporter.sendMail({
       from: `Let'er Buck Car Wash <${process.env.EMAIL_USER}>`,
-      to:  "Jmorrissette@haselwood.com", // Replace with your desired recipient email address
+      to:  "Jmorrissette@haselwood.com, passmanagement@leterbuckcarwash.com", // Replace with your desired recipient email address
       replyTo: data.email, 
       subject: `Manage Subscription – ${data.firstName} ${data.lastName}`,
       text: textBody,
