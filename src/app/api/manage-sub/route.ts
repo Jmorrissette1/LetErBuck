@@ -13,6 +13,9 @@ const escapeHtml = (s: string) =>
     .replace(/"/g, "&quot;")
     .replace(/'/g, "&#039;");
 
+
+
+
 export async function POST(req: NextRequest) {
   try {
     // 1) Enforce JSON requests
@@ -23,6 +26,29 @@ export async function POST(req: NextRequest) {
 
     // 2) Validate + sanitize incoming payload
     const raw = await req.json();
+
+    const recaptchaToken = raw?.recaptchaToken;
+
+    if (!recaptchaToken) {
+      return NextResponse.json({ message: "Missing reCAPTCHA token" }, { status: 400 });
+    }
+
+    const verify = await fetch("https://www.google.com/recaptcha/api/siteverify", {
+    method: "POST",
+    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    body: new URLSearchParams({
+        secret: process.env.APP_VERIFICATION_TOKEN!,
+        response: recaptchaToken,
+      }),
+    });
+
+    const result = await verify.json();
+    console.log("reCAPTCHA verify:", result);
+    
+    if (!result.success) {
+      return NextResponse.json({ message: "reCAPTCHA failed" }, { status: 400 });
+    }
+
     const data = sanitizeManageSub(raw); // throws ZodError on invalid input
 
     // 3) Build plain-text + sanitized HTML bodies
@@ -70,7 +96,7 @@ export async function POST(req: NextRequest) {
     
     await transporter.sendMail({
       from: `Let'er Buck Car Wash <${process.env.EMAIL_USER}>`,
-      to:  "Jmorrissette@haselwood.com, passmanagement@leterbuckcarwash.com",
+      to:  "Jmorrissette@haselwood.com", // Replace with your desired recipient email address
       replyTo: data.email, 
       subject: `Manage Subscription – ${data.firstName} ${data.lastName}`,
       text: textBody,

@@ -29,8 +29,11 @@
 .submitFormBtn {
   margin-top: 1rem;
   width: 150px;
-  height: 25px;
+  height: 35px;
   cursor: pointer;
+  color: #000;
+  background-color: #fed771;
+  font-family: var(--arvo-font);
 }
 
 .form {
@@ -48,14 +51,12 @@
   border: 1px solid #fed771;
 }
 
-
 @media (max-width: 768px) {
-  .formFeild { 
-  flex-direction: column;
- }
+  .formFeild {
+    flex-direction: column;
+  }
 
   .formFeild textarea {
     width: 275px;
-  
   }
 }

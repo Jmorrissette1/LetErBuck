@@ -1,6 +1,6 @@
 
 import type { Metadata } from "next";
-import { Toaster } from "react-hot-toast";
+import Providers from "./providers";
 import localFont from "next/font/local";
 import { Rye, Arvo } from "next/font/google";
 import "./globals.css";
@@ -40,14 +40,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${rye.variable} ${arvo.variable}`}
       >
        <Banner />
-        {children}
-        <Toaster position="top-center" reverseOrder={false} />
+        <Providers>{children}</Providers>
       </body>
     </html>
   );

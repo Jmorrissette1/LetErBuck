@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import toast from "react-hot-toast";
 import styles from "./ManageSub.module.css";
+import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
 
 const ManageAccountForm = () => {
   const initialFormData = {
@@ -18,6 +19,7 @@ const ManageAccountForm = () => {
 
   const [formData, setFormData] = useState(initialFormData);
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const { executeRecaptcha } = useGoogleReCaptcha();
 
   const handleChange = (
     e: React.ChangeEvent<
@@ -30,27 +32,53 @@ const ManageAccountForm = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     
+     if (!executeRecaptcha) {
+      toast.error("reCAPTCHA not ready. Please try again.");
+      return;
+    }
+
+    setIsSubmitting(true);
     const toastId = toast.loading("📤 Sending email...");
+
+   
     try {
+      const recaptchaToken = await executeRecaptcha("manage_sub");
+      console.log("recaptcha token length:", recaptchaToken?.length);
+      
       const response = await fetch("/api/manage-sub", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify(formData),
+        body: JSON.stringify({ ...formData, 
+          recaptchaToken, 
+          recaptchaAction: 'manage_sub' }),
       });
 
-      if (response.ok) {
+      let data: unknown = null;
+      try{
+        data = await response.json();
+      } catch{
+        data = {}
+      }
+
+      if (!response.ok) {
+        const message =
+          (data as { message?: string })?.message ??
+    `❌ Error ${response.status}: Unable to send email. Please try again.`;
+        toast.error(message, { id: toastId });
+        console.error("Form submission error:", message);
+      return;
+      } 
+
         toast.success("✅ Email sent successfully!", { id: toastId });
         console.log("Email sent successfully");
         setFormData(initialFormData);
-      } else {
-        toast.error("❌ Error sending email", { id: toastId });
-        console.error("Error sending email");
-      }
+      
     } catch (error) {
       toast.error("❌ Something went wrong. Try again.", { id: toastId });
-      console.error(error);
+       console.error("Unexpected error during form submission:", error);
+
     } finally {
       setIsSubmitting(false);
     }
@@ -215,13 +243,11 @@ const ManageAccountForm = () => {
           />
         </div>
       </div>
-      <input
-        type="image"
-        src="./images/submit.png"
-        alt="Submit"
+      <button
+        type="submit"
         className={styles.submitFormBtn}
         disabled={isSubmitting}
-      ></input>
+      >Submit Form</button>
     </form>
   );
 };
