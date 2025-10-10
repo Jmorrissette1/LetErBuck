@@ -25,7 +25,7 @@ const JacksonHolePage: React.FC = () => {
                 Address: 660 W Broadway, Jackson, Wyoming 83001
               </p>
 
-              <p className={styles.contentP}>**Wash Packages Unavilable at this location**</p>
+              <p className={styles.contentP}><strong>*Wash Packages Unavilable at this location**</strong></p>
               <div className="p-6 ml-4">
                 <Hours />
               </div>
