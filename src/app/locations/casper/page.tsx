@@ -40,7 +40,7 @@ const CasperPage: React.FC = () => {
               ></iframe>
             </div>
             <p className={styles.contentP}>
-              Address: 4320 East 2nd Street, Casper, WY 82609
+              Address: 3712 CY Ave, Casper, WY 82604
             </p>
             <div className="p-6 ml-4">
               <Hours />
@@ -48,7 +48,7 @@ const CasperPage: React.FC = () => {
             <div className="google-map p-6 ml-4">
               <iframe
                 style={{ border: 0 }}
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2926.323541976283!2d-106.36956308434053!3d42.82377901368231!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8760a4bdb4262653%3A0x2aef7c0d0770f98a!2s3712%20CY%20Ave%2C%20Casper%2C%20WY%2082604!5e0!3m2!1sen!2sus!4v1614202831109!5m2!1sen!2sus"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2926.3236433973125!2d-106.36994168805867!3d42.823776871033346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8760a4bdb4262653%3A0x2aef7c0d0770f98a!2s3712%20CY%20Ave%2C%20Casper%2C%20WY%2082604!5e0!3m2!1sen!2sus!4v1760480270188!5m2!1sen!2sus"
                 width="400"
                 height="300"
                 frameBorder="0"
