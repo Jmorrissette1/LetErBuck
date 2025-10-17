@@ -104,7 +104,8 @@ const HamburgerMenu: React.FC = () => {
                     </AccordionTrigger>
                     <AccordionContent>
                     <ul>
-                      <li><Link href="/locations/casper">Casper</Link></li>
+                      <li><Link href="/locations/casper">Casper - West</Link></li>
+                      <li><Link href="/locations/casper2">Casper - East</Link></li>
                       <li><Link href="/locations/sheridan">Sheridan</Link></li>
                       <li><Link href="/locations/gillette">Gillette</Link></li>
                       <li><Link href="/locations/jackson">Jackson</Link></li>

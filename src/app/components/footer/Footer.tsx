@@ -50,7 +50,7 @@ const Footer: React.FC = () => {
                 /></Link>
                </div>
                 <h2 className={styles.footerH2}>FOLLOW US ON SOCIAL!</h2>
-                <Image src="/images/facebook.png" width={42} height={42} alt="facebook icon" className={styles.socailIcon} /> 
+                <Link href="https://www.facebook.com/LetErBuckCarWash/"><Image src="/images/facebook.png" width={42} height={42} alt="facebook icon" className={styles.socailIcon} /> </Link>
               </div>
            
           </div>
