@@ -17,12 +17,12 @@ const GillettePage: React.FC = () => {
         <div className={styles.contentContainer}>
           <ContentBox>
             <div className={styles.locationBox}>
-              <p className={styles.contentP}>Phone: 307-675-1935</p>
+              <p className={styles.contentP}>Phone: 307-387-3460</p>
               <p className={styles.contentP}>
                 Email: info@leterbuckcarwash.com
               </p>
               <p className={styles.contentP}>
-                Address: 624 East Brundage Lane, Sheridan, WY, 82801
+                Address: 617 E Boxelder Rd, Gillette, WY 82718
               </p>
               <div className="p-6 ml-4">
                 <Hours />
