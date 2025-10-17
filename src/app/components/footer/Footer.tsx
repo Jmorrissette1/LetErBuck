@@ -13,121 +13,46 @@ const Footer: React.FC = () => {
         priority
         className={styles.footerMountian}/>
       <div className={styles.footerBody}>
-        <div className={styles.footerYellowBar}>
-          <ul className={styles.footerNav}>
-            <li className={`${styles.listItem}, ${styles.unlimited}`}>
-             <Link href="https://www.carwashlogin.com/leterbuckcarwash/customerportal/signupforunlimited.aspx"><Image
-                src={"/images/join.svg"}
-                alt="Join The Club"
-                width={75}
-                height={75}
-                className={styles.joinNow}
-              />
-              </Link>
-            </li>
-            <li className={styles.listItem}>
-              <Link href="/packages">Packages</Link>
-            </li>
-            <li className={styles.listItem}>
-              <Link href="/fundraising">Fundraising</Link>
-            </li>
-            <li className={styles.listItem}>
-              <Link href="/about">About Us</Link>
-            </li>
-            <li className={styles.listItem}>
-              <Link href="locations/sheridan">Locations</Link>
-            </li>
-            <li className={styles.listItem}>
-              <Link href="/manage-subscription">Manage Your Subscription</Link>
-            </li>
-            <li>
-              {" "}
-              <Link href="https://www.carwashlogin.com/leterbuckcarwash/customerportal/virtualwashbooks.aspx">
-                <Image
-                  src={"/images/gift-cards.png"}
-                  alt="gift card image"
-                  width={168}
-                  height={22}
-                />
-              </Link>
-            </li>
-          </ul>
-        </div>
         <div className={styles.addressBox}>
+          
           <div className={styles.addressLine}>
+            <h2 className={styles.footerH2}>Locations</h2>
             <div className={styles.row}>
-              <p className={styles.footerP}>
-                <strong>(307)675-1935</strong> 
-              </p>
-              <p className={styles.footerP}>&bull; 624 East Brundage Lane </p>
-              <p className={styles.footerP}>&bull; Sheridan, Wyoming 82801</p>
-            </div>
-            <div>
-              <Link href="/locations/sheridan"><p className={styles.footerP}>Click Here for Hours</p></Link>
+            <Link href="/locations/sheridan"><p className={styles.footerP}>Brundage Ln | Sheridan, Wyoming</p></Link>
             </div>
             <div className={styles.row}>
-              <p className={styles.footerP}>
-                <strong>(307) 337-2202</strong> &bull;
-              </p>
-              <p className={styles.footerP}>4320 East 2nd Street &bull;</p>
-              <p className={styles.footerP}>Casper, Wyoming 82609</p>
-            </div>
-            <div>
-              <Link href="/locations/casper"> <p className={styles.footerP}>Click Here for Hours</p></Link>
+             <Link href="/locations/casper2"> <p className={styles.footerP}>2nd St | Casper, Wyoming</p></Link>
             </div>
             <div className={styles.row}>
-              <p className={styles.footerP}>
-                <strong>(307) 472-9274</strong> &bull;
-              </p>
-              <p className={styles.footerP}>3712 CY Ave &bull;</p>
-              <p className={styles.footerP}>Casper, WY 82604</p>
-            </div>
-            <div>
-             <Link href="/locations/casper"><p className={styles.footerP}>Click Here for Hours</p></Link> 
+               <Link href="/locations/casper"> <p className={styles.footerP}>CY Ave | Casper, Wyoming</p></Link>
             </div>
               <div className={styles.row}>
-              <p className={styles.footerP}>
-                <strong>(307)257-2021</strong> 
-              </p>
-              <p className={styles.footerP}>&bull; 617 Boxelder Rd</p>
-               <Link href="/locations/gillette"><p className={styles.footerP}>&bull; Gillette, WY 82718</p></Link>
-            </div>
-            <div>
-                <Link href="/locations/jackson"><p className={styles.footerP}>Click Here for Hours</p></Link>
-            </div>
+               <Link href="/locations/gillette"> <p className={styles.footerP}>Boxelder RD  | Gillette, Wyoming</p></Link>
+               </div>
             <div className={styles.row}>
-              <p className={styles.footerP}>
-                <strong>(307)201-5251</strong> 
-              </p>
-              <p className={styles.footerP}>&bull; 660 W Broadway</p>
-              <p className={styles.footerP}>&bull; Jackson, Wyoming 83001</p>
-            </div>
-            <div>
-                <Link href="/locations/jackson"><p className={styles.footerP}>Click Here for Hours</p></Link>
-            </div>
-            <div>
-              <Image
-                src="/images/facebook.svg"
-                alt="facebook Icon"
-                width={50}
-                height={50}
-              />
+               <Link href="/locations/jackson"> <p className={styles.footerP}>Broadway | Jackson, Wyoming</p></Link>
             </div>
           </div>
           <div>
-            <div>
-              <p className={styles.footerP}>
-                <em>PROUDLY OFFERING THE WORLD’S MOST POWERFUL VACUUMS BY</em>
-              </p>
+              <Image src="/images/LEB-Logo.svg" width={200} height={220} alt="cowboy riding a car" className={styles.footerLogo} />
+            </div>
+          <div>
+            
+            <div className={styles.vaccumBox}>
+             <h2 className={styles.footerH2}>PROUDLY OFFERING VACUUMS BY</h2>
+            
               <div className={styles.vacutechImage}>
                 <Link href="https://vacutechllc.com/"><Image
                   src="/images/vacutech.png"
                   alt="Vault Tech Vacums"
-                  width={115}
-                  height={25}
+                  width={204}
+                  height={41}
                 /></Link>
+               </div>
+                <h2 className={styles.footerH2}>FOLLOW US ON SOCIAL!</h2>
+                <Image src="/images/facebook.png" width={42} height={42} alt="facebook icon" className={styles.socailIcon} /> 
               </div>
-            </div>
+           
           </div>
         </div>
          <div className={styles.addressBoxM}>

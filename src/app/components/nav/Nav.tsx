@@ -64,7 +64,10 @@ const Nav: React.FC = () => {
                 <Link href="/locations/sheridan">Sheridan</Link>
               </li>
               <li className={styles.dropdownItem}>
-                <Link href="/locations/casper">Casper</Link>
+                <Link href="/locations/casper">Casper - West </Link>
+              </li>
+               <li className={styles.dropdownItem}>
+                <Link href="/locations/casper2">Casper - East </Link>
               </li>
               <li className={styles.dropdownItem}>
                 <Link href="/locations/gillette">Gillette</Link>

@@ -6,29 +6,32 @@ import SpecialsBanner from "@/app/components/specialsBanner/SpecialsBanner";
 import styles from "@/app/page.module.css";
 import Hours from "@/app/components/shared/hours";
 
-const CasperPage: React.FC = () => {
+const Casper2Page: React.FC = () => {
   return (
     <div className={styles.page}>
       <Nav />
       <main className={styles.main}>
         <div className={styles.pageHeader}>
-          <h1 className={styles.pageH1}>Casper Location - West</h1>
+          <h1 className={styles.pageH1}>Casper Location - East</h1>
         </div>
         <div className={styles.contentContainer}>
           <ContentBox>
             <div className={styles.locationBox}>
               <p className={styles.contentP}>Phone: 307-675-1935</p>
-            </div>
-            <p className={styles.contentP}>
-              Address: 3712 CY Ave, Casper, WY 82604
-            </p>
-            <div className="p-6 ml-4">
-              <Hours />
+              <p className={styles.contentP}>
+                Email: info@leterbuckcarwash.com
+              </p>
+              <p className={styles.contentP}>
+                Address: 4320 East 2nd Street, Casper, WY 82609
+              </p>
+              <div className="p-6 ml-4">
+                <Hours />
+              </div>
             </div>
             <div className="google-map p-6 ml-4">
               <iframe
                 style={{ border: 0 }}
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2926.3236433973125!2d-106.36994168805867!3d42.823776871033346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8760a4bdb4262653%3A0x2aef7c0d0770f98a!2s3712%20CY%20Ave%2C%20Casper%2C%20WY%2082604!5e0!3m2!1sen!2sus!4v1760480270188!5m2!1sen!2sus"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2925.1215003237835!2d-106.27217048437063!3d42.849167612064804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8760bbf5d8472749%3A0xd3c51237784c5a3a!2s4320+E+2nd+St%2C+Casper%2C+WY+82609!5e0!3m2!1sen!2sus!4v1553600168261"
                 width="400"
                 height="300"
                 frameBorder="0"
@@ -45,4 +48,4 @@ const CasperPage: React.FC = () => {
   );
 };
 
-export default CasperPage;
+export default Casper2Page;
