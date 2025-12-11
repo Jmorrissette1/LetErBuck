@@ -4,7 +4,7 @@ import Footer from "@/app/components/footer/Footer";
 import ContentBox from "@/app/components/contentBox/ContentBox";
 
 import styles from "@/app/page.module.css";
-import Hours from "@/app/components/shared/hours";
+import Hours from "@/app/components/shared/jacksonHours";
 import JacksonBanner from "@/app/components/jacksonBanner/JacksonBanner";
 
 
