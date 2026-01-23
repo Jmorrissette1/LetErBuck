@@ -71,7 +71,7 @@ const Footer: React.FC = () => {
          </div>
           
         <p className={styles.footerP}>
-          Copyright © 2025 Let&apos;Er Buck Car Wash. All Rights Reserved.
+          Copyright © 2026 Let&apos;Er Buck Car Wash. All Rights Reserved.
         </p>
       </div>
 
