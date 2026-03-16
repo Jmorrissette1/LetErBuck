@@ -7,7 +7,7 @@ const Hours = () => {
         *Hours typically change at Daylight savings time
       </p>
       <p>Mon-Sat</p>
-      <p>8:00 a.m. to 6 p.m.</p>
+      <p>8:00 a.m. to 7 p.m.</p>
       <p>Sunday </p>
       <p>9:00 a.m. to 5 p.m.</p>
     </div>
