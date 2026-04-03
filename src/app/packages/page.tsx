@@ -109,7 +109,7 @@ const Packages: React.FC = () => {
             <div className={styles.packagePriceRow}>
               <div className={styles.packagePrice}>
                 <p className={styles.price}>
-                  $17<span className={styles.text2xl}>ea.</span>
+                  $12<span className={styles.text2xl}>ea.</span>
                 </p>
                 <p className={styles.priceType}>Single Wash</p>
               </div>
