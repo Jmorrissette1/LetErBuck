@@ -17,7 +17,7 @@ const HomeBanner: React.FC = () => {
           height={25}
         ></Image>
         <p className={styles.startingAt}>Starting at Just</p>
-        <h2 className={styles.bannerPrice}>$20/Mo.</h2>
+        <h2 className={styles.bannerPrice}>$22/Mo.</h2>
         <p className={styles.stayClean}>
           <em>Stay clean for Less!</em>
         </p>

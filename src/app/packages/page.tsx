@@ -24,14 +24,14 @@ const Packages: React.FC = () => {
             <div className={styles.packagePriceRow}>
               <div className={styles.packagePrice}>
                 <p className={styles.price}>
-                  $25<span className={styles.text2xl}>ea.</span>
+                  $26<span className={styles.text2xl}>ea.</span>
                 </p>
                 <p className={styles.priceType}>Single Wash</p>
               </div>
               <div className={styles.verticalLine}></div>
               <div className={styles.packagePrice}>
                 <p className={styles.price}>
-                  $35<span className={styles.text2xl}>/mo.</span>
+                  $37<span className={styles.text2xl}>/mo.</span>
                 </p>
                 <p className={styles.priceType}>Unlimited Wash</p>
               </div>
@@ -68,14 +68,14 @@ const Packages: React.FC = () => {
             <div className={styles.packagePriceRow}>
               <div className={styles.packagePrice}>
                 <p className={styles.price}>
-                  $22<span className={styles.text2xl}>ea.</span>
+                  $23<span className={styles.text2xl}>ea.</span>
                 </p>
                 <p className={styles.priceType}>Single Wash</p>
               </div>
               <div className={styles.verticalLine}></div>
               <div className={styles.packagePrice}>
                 <p className={styles.price}>
-                  $32<span className={styles.text2xl}>/mo.</span>
+                  $34<span className={styles.text2xl}>/mo.</span>
                 </p>
                 <p className={styles.priceType}>Unlimited Wash</p>
               </div>
@@ -109,14 +109,14 @@ const Packages: React.FC = () => {
             <div className={styles.packagePriceRow}>
               <div className={styles.packagePrice}>
                 <p className={styles.price}>
-                  $17<span className={styles.text2xl}>ea.</span>
+                  $18<span className={styles.text2xl}>ea.</span>
                 </p>
                 <p className={styles.priceType}>Single Wash</p>
               </div>
               <div className={styles.verticalLine}></div>
               <div className={styles.packagePrice}>
                 <p className={styles.price}>
-                  $27<span className={styles.text2xl}>/mo.</span>
+                  $29<span className={styles.text2xl}>/mo.</span>
                 </p>
                 <p className={styles.priceType}>Unlimited Wash</p>
               </div>
@@ -149,14 +149,14 @@ const Packages: React.FC = () => {
             <div className={styles.packagePriceRow}>
               <div className={styles.packagePrice}>
                 <p className={styles.price}>
-                  $12<span className={styles.text2xl}>ea.</span>
+                  $13<span className={styles.text2xl}>ea.</span>
                 </p>
                 <p className={styles.priceType}>Single Wash</p>
               </div>
               <div className={styles.verticalLine}></div>
               <div className={styles.packagePrice}>
                 <p className={styles.price}>
-                  $20<span className={styles.text2xl}>/mo.</span>
+                  $22<span className={styles.text2xl}>/mo.</span>
                 </p>
                 <p className={styles.priceType}>Unlimited Wash</p>
               </div>

@@ -68,7 +68,7 @@ const SpecialsBanner = () => {
                   styles.packageP
                 )}
               >
-                $35/MO.
+                $37/MO.
               </div>
               <Link href="/manage-subscription" target="_blank">
                 <Image
@@ -101,7 +101,7 @@ const SpecialsBanner = () => {
                   styles.packageP
                 )}
               >
-                $32/MO.
+                $35/MO.
               </div>
               <Link href="/manage-subscription" target="_blank">
                 <Image
@@ -134,7 +134,7 @@ const SpecialsBanner = () => {
                   styles.packageP
                 )}
               >
-                $27/MO.
+                $29/MO.
               </div>
               <Link href="/manage-subscription" target="_blank">
                 <Image
@@ -167,7 +167,7 @@ const SpecialsBanner = () => {
                   styles.packageP
                 )}
               >
-                $20/MO.
+                $22/MO.
               </div>
               <Link href="/manage-subscription" target="_blank">
                 <Image
