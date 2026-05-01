@@ -39,7 +39,7 @@ const JacksonBanner = () => {
                 Wyoming <br />Works
               </div>
               <div className={styles.packageP2}>
-                $26
+                $27
               </div>
           </div>
           <div className={styles.priceBox}>
@@ -47,7 +47,7 @@ const JacksonBanner = () => {
                 Steamboat <br /> Ceramic
               </div>
               <div className={styles.packageP1}>
-                $23
+                $24
               </div>
           </div>
           <div className={styles.priceBox}>
@@ -55,7 +55,7 @@ const JacksonBanner = () => {
                 Big Horn <br /> Experience
               </div>
               <div className={styles.packageP1}>
-                $18
+                $19
               </div> 
           </div>
         </div>
