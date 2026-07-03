@@ -1,11 +1,28 @@
-import Link from "next/link";
 import Image from "next/image";
 const banner = () => {
-    return ( <div>
-        <Link href="#"><Image src="/images/LEB-BCA-D.png" alt="beast cancer awareness 2025" width={3000} height={300} className="banner-img"/></Link>
-        <Link href="#"><Image src="/images/LEB-BCA-M.png" alt="breast cancer awareness 2025"width={360} height={100} className="banner-img-m"/></Link>
-        </div> );
+	return (
+		<div className="relative z-50 w-full">
+			{/* Desktop */}
+			<Image
+				src="/images/4th-banner-D.png"
+				width={1920}
+				height={60}
+				alt="Fourth of July hours banner"
+				className="hidden md:block w-full h-auto"
+				priority
+			/>
 
-}
- 
+			{/* Mobile */}
+			<Image
+				src="/images/4th-banner-M.png"
+				width={768}
+				height={200}
+				alt="Fourth of July hours banner"
+				className="block md:hidden w-full h-auto"
+				priority
+			/>
+		</div>
+	);
+};
+
 export default banner;
