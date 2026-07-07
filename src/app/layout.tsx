@@ -50,7 +50,6 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${rye.variable} ${arvo.variable}`}
       >
-       <Banner />
         <Providers>{children}</Providers>
       </body>
     </html>
